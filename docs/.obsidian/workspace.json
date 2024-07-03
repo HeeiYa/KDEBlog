@@ -1,0 +1,191 @@
+{
+  "main": {
+    "id": "2ad7a9d04040e66c",
+    "type": "split",
+    "children": [
+      {
+        "id": "3c850faf210c7bc4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "99f3611250fe1ede",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "072d834843e6b682",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c6585ee686822f20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "de79a45863bef995",
+    "type": "split",
+    "children": [
+      {
+        "id": "35035e1f8bdeb9ee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e918a962da854a20",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c0696ca603929af7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:OSPP",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "2ff8d9ba3502a90b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0d3bc6d0e468cd6a",
+    "type": "split",
+    "children": [
+      {
+        "id": "a9a47d02e788fe77",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c514404ffd7f7745",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9ae16f32c18014af",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "README.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "743cc268d15474c3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "bb0349be2a78aa4a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "99f3611250fe1ede",
+  "lastOpenFiles": [
+    "posts/关于我.md",
+    "posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
+    "posts/archive1.md",
+    "posts/archive2.md",
+    "README.md",
+    "get-started.md",
+    "posts/sticky2.md",
+    "posts/article2.md",
+    "posts/article11.md",
+    "posts/article5.md",
+    "posts/article8.md",
+    "posts/article10.md",
+    "posts/article12.md",
+    "posts/article6.md",
+    "posts/article9.md",
+    "posts/article7.md",
+    "posts/article3.md",
+    "posts/images",
+    "posts/article4.md",
+    "[.md",
+    "[].md"
+  ]
+}
