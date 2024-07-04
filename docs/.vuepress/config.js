@@ -4,38 +4,87 @@ import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
-  lang: 'zh-CN',
-
+  // lang: 'zh-CN',
+  base: '/KDEBlog/',
   title: 'KDEBlog',
-  description: '',
+  // description: '',
+
+  locales: {
+    // 键名是该语言所属的子路径
+    // 作为特例，默认语言可以使用 '/' 作为其路径。
+    '/': {
+      lang: 'en-US',
+      title: 'Blog',
+      description: 'A simple blog',
+    },
+    '/zh/': {
+      lang: 'zh-CN',
+      title: 'Blog',
+      description: '小小博客',
+    },
+  },
+
 
   theme: defaultTheme({
-    base:'/KDEBlog/',
     logo: 'https://avatars.githubusercontent.com/u/90752469?s=400&u=69796f3c09ffaa19d5dc128699599458dadb5d14&v=4',
+    colorMode: 'dark',
+    locales: {
+      '/': {
+        selectLanguageName: 'English',
+        navbar: [
+          '/',
+          {
+            text: 'Article',
+            link: '/article/',
+          },
+          // {
+          //   text: 'Category',
+          //   link: '/category/',
+          // },
+          // {
+          //   text: 'Tag',
+          //   link: '/tag/',
+          // },
+          {
+            text: 'TimeLine',
+            link: '/timeline/',
+          }
+        ],
 
-    navbar: [
-      '/',
-      {
-        text: '文章',
-        link: '/article/',
       },
-      // {
-      //   text: 'Category',
-      //   link: '/category/',
-      // },
-      // {
-      //   text: 'Tag',
-      //   link: '/tag/',
-      // },
-      {
-        text: '时间线',
-        link: '/timeline/',
-      },
-    ],
+      '/zh/': {
+
+        selectLanguageName: '简体中文',
+        navbar: [
+          '/',
+          {
+            text: '文章',
+            link: '/article/',
+          },
+          // {
+          //   text: 'Category',
+          //   link: '/category/',
+          // },
+          // {
+          //   text: 'Tag',
+          //   link: '/tag/',
+          // },
+          {
+            text: '时间线',
+            link: '/timeline/',
+          }
+        ],
+
+      }
+    },
   }),
 
   plugins: [
     blogPlugin({
+      devServer: true,
+      hostname: 'heeiya.github.io/KDEBlog/',
+      rss: true,
+
       // Only files under posts are articles
       filter: ({ filePathRelative }) =>
         filePathRelative ? filePathRelative.startsWith('posts/') : false,

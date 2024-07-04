@@ -2,77 +2,69 @@
 date: 2024-07-03
 category:
   - OSPP
-tag:
+tags:
   - OSPP
   - KDE
-excerpt: <p>关于我申请的OSPP的KDE项目</p>
+excerpt: <p> about my OSPP KDE project </p>
 ---
+
+
 # 2024OSPP KDE社区项目：Porting KDE Games to Android platform
 
-在2024年开源之夏（OSPP）活动中，我很荣幸被KDE社区的项目：Porting KDE Games to Android platform 选中。这是KDE社区首次参加OSPP，也是他们第一个，而且是唯一一个项目。
+During the 2024 Open Source Promotion Plan (OSPP) event, I had the honor of being selected for the KDE community project: Porting KDE Games to the Android platform. This is KDE community's first participation in OSPP, and it is their first and only project.
 
-关于OSPP（开源之夏）：
+About OSPP (Open Source Promotion Plan):
 
->开源之夏是由“**开源软件供应链点亮计划**”发起并长期支持的一项暑期开源活动，旨在鼓励在校学生积极参与开源软件的开发维护，促进优秀开源软件社区的蓬勃发展，培养和发掘更多优秀的开发者。 活动联合国内外各大开源社区，针对重要开源软件的开发与维护提供项目任务，并面向全球高校学生开放报名。
-[开源软件供应链点亮计划-开源之夏2024](https://summer-ospp.ac.cn/?lang=en)
+> The Open Source Promotion Plan is a summer open source event initiated and long-term supported by the "**Open Source Software Supply Chain Lighting Plan**". It aims to encourage students to actively participate in the development and maintenance of open source software, promote the vigorous development of outstanding open source software communities, and cultivate and discover more excellent developers. The event collaborates with major open source communities at home and abroad, providing project tasks for the development and maintenance of important open source software and is open to global college students for registration. [Open Source Software Supply Chain Lighting Plan - OSPP 2024](https://summer-ospp.ac.cn/?lang=en)
 
-关于KDE社区：
-[什么是 KDE - KDE UserBase Wiki](https://userbase.kde.org/What_is_KDE/zh-cn)
-> KDE 是由全球程序员、译者、贡献者、艺术家、作者、发行商和用户组成的庞大**社区**，致力于为桌面造出最好的自由软件。KDE 软件的用户和粉丝也遍布全球，他们互帮互助，传播社区消息新闻，或仅仅是享受这种美妙的体验。
+About the KDE Community: [What is KDE - KDE UserBase Wiki](https://userbase.kde.org/What_is_KDE/zh-cn)
 
-KDE官网
-[KDE 中国 | KDE 中国社区](https://kde-china.org/)
-[首页 - KDE 社区](https://kde.org/zh-cn/)
+> KDE is a large **community** of programmers, translators, contributors, artists, authors, distributors, and users from around the world, dedicated to creating the best free software for desktops. Users and fans of KDE software are also spread globally, helping each other, spreading community news, or just enjoying this wonderful experience.
 
-## 项目介绍
+[KDE community](https://kde.org/zh-cn/)
 
-KDE项目：[Porting KDE Games to Android platform](https://summer-ospp.ac.cn/org/prodetail/24b5c0531?list=org&navpage=org)的描述如下
+## Project Introduction
 
->  KDE Games and educational games are integral parts of the KDE Gear suite. Very few application are currently operational on platforms other than Linux, such as Android. The supported applications can be viewed at https://apps.kde.org/platforms/android. Consequently, we plan to port some of these games to Android, specifically supporting architectures like arm64-v8a, x86, and x86_64. The ultimate goal is to distribute their Android versions through apps.kde.org, F-Droid, Google Store, etc.  
->  
->  Candidates for porting include Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollision, KSudoku, KTurtle, Picmi, and Klines. You can learn about their features and code at apps.kde.org or invent.kde.org.  
->  
->  Finally, you will port one or more of these games to Android and facilitate community efforts to distribute them through software stores.
+The description of the KDE project: [Porting KDE Games to Android platform](https://summer-ospp.ac.cn/org/prodetail/24b5c0531?list=org&navpage=org) is as follows:
 
-简单来说，就是移植一些KDE游戏到安卓平台，这些游戏目前只能在Linux平台获取，如果你使用Ubuntu系统，可以通过以下方式安装并运行一款游戏
+> KDE Games and educational games are integral parts of the KDE Gear suite. Very few applications are currently operational on platforms other than Linux, such as Android. The supported applications can be viewed at [https://apps.kde.org/platforms/android](https://apps.kde.org/platforms/android). Consequently, we plan to port some of these games to Android, specifically supporting architectures like arm64-v8a, x86, and x86_64. The ultimate goal is to distribute their Android versions through apps.kde.org, F-Droid, Google Store, etc.
+> 
+> Candidates for porting include Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollision, KSudoku, KTurtle, Picmi, and Klines. You can learn about their features and code at apps.kde.org or invent.kde.org.
+> 
+> Finally, you will port one or more of these games to Android and facilitate community efforts to distribute them through software stores.
 
-```shell
-sudo apt install Kollision
-kollision
-```
+In simple terms, the project involves porting some KDE games to the Android platform, as these games are currently only available on the Linux platform. If you use Ubuntu, you can install and run a game with the following commands:
 
-可供选择的游戏包括
-Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollision, KSudoku等。但是项目结项只需要完成一个游戏的移植就可以了。
+shell
 
----
+Copy code
 
-## 关于我申请的经历
+`sudo apt install Kollision kollision`
 
-当初我看到这个项目的时候已经比较晚了，距离项目申请截止不到一周，在那之前我写了一份其他项目的申请书。但是看到这个项目之后，觉得确实这个项目对我更有吸引力一点，但是不巧的是，那个时候我正在准备一场考试，所以实际上我写申请书的时候，只剩下了两天时间。
+Available games include Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollision, KSudoku, KTurtle, Picmi, and Klines. However, for the completion of the project, porting just one game is sufficient.
 
-在熬了一个通宵后，我提交了申请书，并把这个项目放到了第一志愿。
-最终，在6月26号收到了申请通过的邮件。
-## 关于申请原因
+## My Application Experience
 
-因为目前编程的主力是C++，所以我当初选择项目的时候是从C++的项目里面挑选的。
-相比于其他项目，我觉得这个项目更有趣一些。
+When I first saw this project, it was quite late, with less than a week before the application deadline. Before that, I had already written an application for another project. However, after seeing this project, I felt it was more appealing to me. Unfortunately, at that time, I was preparing for an exam, so I had only two days left to write the application.
 
-当时并不知道这是KDE社区第一次参与OSPP，这也是第一个以及唯一一个项目，对KDE社区也并没有了解。
-后来了解了KDE社区后发现我还是很喜欢他们的理念的，导师也非常热心，在申请过程中多次强调沟通的重要性，并给了我很多帮助。
-## 项目开发计划
+After pulling an all-nighter, I submitted my application and listed this project as my first choice. Finally, on June 26, I received an email confirming that my application had been accepted.
 
-项目使用QML来移植安卓程序，简单来说，分为以下几步
+## Reason for Applying
 
-1. 配置开发环境
-2. 创建QtQuick工程并开始迁移
-	1. 实现UI
-	2. 移植逻辑代码
-3. 打包部署并测试。
+Since my primary programming language is C++, I chose this project from the list of C++ projects. Compared to other projects, I found this one more interesting.
 
+Initially, I did not know that this was KDE community's first participation in OSPP, nor did I know it was their first and only project. I also wasn't familiar with the KDE community. After learning about the KDE community, I discovered that I really liked their philosophy. The mentor was also very enthusiastic and emphasized the importance of communication multiple times during the application process, providing me with a lot of help.
 
-目前来说，已经大致完成了配置环境的工作。
-因为我的目前只有一台windows的机器，所以我的解决方案是VirtualBox里运行一台Fedora workstation40的虚拟机，并在虚拟机里使用podman+distrobox的方式，通过KDE的kdesrc-build工具来搭建KDE开发环境。
+## Project Development Plan
 
+The project uses QML to port the applications to Android. In simple terms, the process is divided into the following steps:
 
+1. Configure the development environment.
+2. Create a QtQuick project and start the migration:
+    1. Implement the UI.
+    2. Port the logic code.
+3. Package, deploy, and test.
 
+Currently, I have roughly completed the work of configuring the environment.
 
+Since I only have a Windows machine at the moment, my solution is to run a Fedora Workstation 40 virtual machine using VirtualBox. In the virtual machine, I use podman and distrobox to set up the KDE development environment with the KDE kdesrc-build tool.

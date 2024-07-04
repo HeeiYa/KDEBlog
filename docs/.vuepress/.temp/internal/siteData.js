@@ -1,4 +1,4 @@
-export const siteData = JSON.parse("{\"base\":\"/\",\"lang\":\"zh-CN\",\"title\":\"KDEBlog\",\"description\":\"\",\"head\":[],\"locales\":{}}")
+export const siteData = JSON.parse("{\"base\":\"/KDEBlog/\",\"lang\":\"en-US\",\"title\":\"KDEBlog\",\"description\":\"\",\"head\":[],\"locales\":{\"/\":{\"lang\":\"en-US\",\"title\":\"Blog\",\"description\":\"A simple blog\"},\"/zh/\":{\"lang\":\"zh-CN\",\"title\":\"Blog\",\"description\":\"小小博客\"}}}")
 
 if (import.meta.webpackHot) {
   import.meta.webpackHot.accept()

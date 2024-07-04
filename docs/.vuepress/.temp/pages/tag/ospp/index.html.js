@@ -1,5 +1,5 @@
 import comp from "D:/MINE/MyBlog/KDEBlog/docs/.vuepress/.temp/pages/tag/ospp/index.html.vue"
-const data = JSON.parse("{\"path\":\"/tag/ospp/\",\"title\":\"Tag OSPP\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Tag OSPP\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"OSPP\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
+const data = JSON.parse("{\"path\":\"/tag/ospp/\",\"title\":\"Tag OSPP\",\"lang\":\"en-US\",\"frontmatter\":{\"title\":\"Tag OSPP\",\"sidebar\":false,\"blog\":{\"type\":\"category\",\"name\":\"OSPP\",\"key\":\"tag\"},\"layout\":\"Tag\"},\"headers\":[],\"git\":{},\"filePathRelative\":null,\"excerpt\":\"\"}")
 export { comp, data }
 
 if (import.meta.webpackHot) {
