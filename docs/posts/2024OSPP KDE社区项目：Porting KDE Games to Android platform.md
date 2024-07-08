@@ -35,11 +35,11 @@ The description of the KDE project: [Porting KDE Games to Android platform](http
 
 In simple terms, the project involves porting some KDE games to the Android platform, as these games are currently only available on the Linux platform. If you use Ubuntu, you can install and run a game with the following commands:
 
-shell
+```shell
+sudo apt install Kollision
+kollision
+```
 
-Copy code
-
-`sudo apt install Kollision kollision`
 
 Available games include Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollision, KSudoku, KTurtle, Picmi, and Klines. However, for the completion of the project, porting just one game is sufficient.
 
