@@ -87,7 +87,7 @@ export default defineUserConfig({
       atom: true,
       json: true,
       image: "https://avatars.githubusercontent.com/u/90752469?s=400&u=69796f3c09ffaa19d5dc128699599458dadb5d14&v=4",
-      hostname: 'heeiya.github.io/KDEBlog/'
+      hostname: 'heeiya.github.io'
     }),
     blogPlugin({
       devServer: true,
