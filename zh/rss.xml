@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://heeiya.github.io/KDEBlog/KDEBlog/zh/rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <atom:link href="https://heeiya.github.io/KDEBlog/KDEBlog/zh/rss.xml" rel="self" type="application/rss+xml"/>
+    <title>Blog</title>
+    <link>https://heeiya.github.io/KDEBlog/KDEBlog/zh/</link>
+    <description>小小博客</description>
+    <language>zh-CN</language>
+    <pubDate>Wed, 10 Jul 2024 15:35:52 GMT</pubDate>
+    <lastBuildDate>Wed, 10 Jul 2024 15:35:52 GMT</lastBuildDate>
+    <generator>@vuepress/plugin-feed</generator>
+    <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <category>OSPP</category>
+    <category>introduction</category>
+    <category>History</category>
+    <item>
+      <title>2024OSPP KDE社区项目：Porting KDE Games to Android platform</title>
+      <link>https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/2024OSPP%20KDE%E7%A4%BE%E5%8C%BA%E9%A1%B9%E7%9B%AE%EF%BC%9APorting%20KDE%20Games%20to%20Android%20platform.html</link>
+      <guid>https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/2024OSPP%20KDE%E7%A4%BE%E5%8C%BA%E9%A1%B9%E7%9B%AE%EF%BC%9APorting%20KDE%20Games%20to%20Android%20platform.html</guid>
+      <source url="https://heeiya.github.io/KDEBlog/KDEBlog/zh/rss.xml">2024OSPP KDE社区项目：Porting KDE Games to Android platform</source>
+      <description>2024OSPP KDE社区项目：Porting KDE Games to Android platform
+在2024年开源之夏（OSPP）活动中，我很荣幸被KDE社区的项目：Porting KDE Games to Android platform 选中。这是KDE社区首次参加OSPP，也是他们第一个，而且是唯一一个项目。
+关于OSPP（开源之夏）...</description>
+      <category>OSPP</category>
+      <pubDate>Wed, 03 Jul 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>在2024年开源之夏（OSPP）活动中，我很荣幸被KDE社区的项目：Porting KDE Games to Android platform 选中。这是KDE社区首次参加OSPP，也是他们第一个，而且是唯一一个项目。</p>
+<p>关于OSPP（开源之夏）：</p>
+<blockquote>
+<p>开源之夏是由“<strong>开源软件供应链点亮计划</strong>”发起并长期支持的一项暑期开源活动，旨在鼓励在校学生积极参与开源软件的开发维护，促进优秀开源软件社区的蓬勃发展，培养和发掘更多优秀的开发者。 活动联合国内外各大开源社区，针对重要开源软件的开发与维护提供项目任务，并面向全球高校学生开放报名。
+<a href="https://summer-ospp.ac.cn/?lang=en" target="_blank" rel="noopener noreferrer">开源软件供应链点亮计划-开源之夏2024</a></p>
+</blockquote>
+<p>关于KDE社区：
+<a href="https://userbase.kde.org/What_is_KDE/zh-cn" target="_blank" rel="noopener noreferrer">什么是 KDE - KDE UserBase Wiki</a></p>
+<blockquote>
+<p>KDE 是由全球程序员、译者、贡献者、艺术家、作者、发行商和用户组成的庞大<strong>社区</strong>，致力于为桌面造出最好的自由软件。KDE 软件的用户和粉丝也遍布全球，他们互帮互助，传播社区消息新闻，或仅仅是享受这种美妙的体验。</p>
+</blockquote>
+<p>KDE官网
+<a href="https://kde-china.org/" target="_blank" rel="noopener noreferrer">KDE 中国 | KDE 中国社区</a>
+<a href="https://kde.org/zh-cn/" target="_blank" rel="noopener noreferrer">首页 - KDE 社区</a></p>
+<h2>项目介绍</h2>
+<p>KDE项目：<a href="https://summer-ospp.ac.cn/org/prodetail/24b5c0531?list=org&amp;navpage=org" target="_blank" rel="noopener noreferrer">Porting KDE Games to Android platform</a>的描述如下</p>
+<blockquote>
+<p>KDE Games and educational games are integral parts of the KDE Gear suite. Very few application are currently operational on platforms other than Linux, such as Android. The supported applications can be viewed at https://apps.kde.org/platforms/android. Consequently, we plan to port some of these games to Android, specifically supporting architectures like arm64-v8a, x86, and x86_64. The ultimate goal is to distribute their Android versions through apps.kde.org, F-Droid, Google Store, etc.</p>
+<p>Candidates for porting include Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollision, KSudoku, KTurtle, Picmi, and Klines. You can learn about their features and code at apps.kde.org or invent.kde.org.</p>
+<p>Finally, you will port one or more of these games to Android and facilitate community efforts to distribute them through software stores.</p>
+</blockquote>
+<p>简单来说，就是移植一些KDE游戏到安卓平台，这些游戏目前只能在Linux平台获取，如果你使用Ubuntu系统，可以通过以下方式安装并运行一款游戏</p>
+<div class="language-bash" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre class="language-bash"><code><span class="line"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> Kollision</span>
+<span class="line">kollision</span>
+<span class="line"></span></code></pre></div><p>可供选择的游戏包括
+Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollision, KSudoku等。但是项目结项只需要完成一个游戏的移植就可以了。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>自我介绍</title>
+      <link>https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/%E5%85%B3%E4%BA%8E%E6%88%91.html</link>
+      <guid>https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/%E5%85%B3%E4%BA%8E%E6%88%91.html</guid>
+      <source url="https://heeiya.github.io/KDEBlog/KDEBlog/zh/rss.xml">自我介绍</source>
+      <description>自我介绍
+这里暂时是空白</description>
+      <category>introduction</category>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>这里暂时是空白</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Archive Article2</title>
+      <link>https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/archive2.html</link>
+      <guid>https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/archive2.html</guid>
+      <source url="https://heeiya.github.io/KDEBlog/KDEBlog/zh/rss.xml">Archive Article2</source>
+      <description>Archive Article2
+Heading 2
+Here is the content.
+Heading 3
+Here is the content.</description>
+      <category>History</category>
+      <pubDate>Fri, 02 Jan 1998 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<h2>Heading 2</h2>
+<p>Here is the content.</p>
+<h3>Heading 3</h3>
+<p>Here is the content.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Archive Article1</title>
+      <link>https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/archive1.html</link>
+      <guid>https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/archive1.html</guid>
+      <source url="https://heeiya.github.io/KDEBlog/KDEBlog/zh/rss.xml">Archive Article1</source>
+      <description>Archive Article1
+Heading 2
+Here is the content.
+Heading 3
+Here is the content.</description>
+      <category>History</category>
+      <pubDate>Thu, 01 Jan 1998 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<h2>Heading 2</h2>
+<p>Here is the content.</p>
+<h3>Heading 3</h3>
+<p>Here is the content.</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>
