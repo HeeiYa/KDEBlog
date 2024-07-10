@@ -17,10 +17,10 @@
 <p>Finally, you will port one or more of these games to Android and facilitate community efforts to distribute them through software stores.</p>
 </blockquote>
 <p>In simple terms, the project involves porting some KDE games to the Android platform, as these games are currently only available on the Linux platform. If you use Ubuntu, you can install and run a game with the following commands:</p>
-<p>shell</p>
-<p>Copy code</p>
-<p><code v-pre>sudo apt install Kollision kollision</code></p>
-<p>Available games include Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollision, KSudoku, KTurtle, Picmi, and Klines. However, for the completion of the project, porting just one game is sufficient.</p>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre class="language-bash"><code><span class="line"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> Kollision</span>
+<span class="line">kollision</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>Available games include Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollision, KSudoku, KTurtle, Picmi, and Klines. However, for the completion of the project, porting just one game is sufficient.</p>
 <h2 id="my-application-experience" tabindex="-1"><a class="header-anchor" href="#my-application-experience"><span>My Application Experience</span></a></h2>
 <p>When I first saw this project, it was quite late, with less than a week before the application deadline. Before that, I had already written an application for another project. However, after seeing this project, I felt it was more appealing to me. Unfortunately, at that time, I was preparing for an exam, so I had only two days left to write the application.</p>
 <p>After pulling an all-nighter, I submitted my application and listed this project as my first choice. Finally, on June 26, I received an email confirming that my application had been accepted.</p>

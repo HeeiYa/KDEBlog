@@ -27,8 +27,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +93,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zh/posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +109,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zh/posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,9 +130,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "zh/posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -155,10 +150,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "1fc25818514d528f",
+  "active": "c6585ee686822f20",
   "lastOpenFiles": [
-    "posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
     "zh/posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
+    "posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
     "posts/关于我.md",
     "README.md",
     "posts",
