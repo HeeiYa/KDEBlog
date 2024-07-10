@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://heeiya.github.io/KDEBlog/KDEBlog/zh/atom.xsl"?>
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="https://heeiya.github.io/KDEBlog/zh/atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
-  <id>https://heeiya.github.io/KDEBlog/KDEBlog/zh/</id>
+  <id>https://heeiya.github.io/KDEBlog/zh/</id>
   <title>Blog</title>
   <subtitle>小小博客</subtitle>
   <logo>https://avatars.githubusercontent.com/u/90752469?s=400&amp;u=69796f3c09ffaa19d5dc128699599458dadb5d14&amp;v=4</logo>
-  <updated>2024-07-10T15:57:58.031Z</updated>
+  <updated>2024-07-10T16:17:53.234Z</updated>
   <generator>@vuepress/plugin-feed</generator>
-  <link rel="self" href="https://heeiya.github.io/KDEBlog/KDEBlog/zh/atom.xml"/>
-  <link rel="alternate" href="https://heeiya.github.io/KDEBlog/KDEBlog/zh/"/>
+  <link rel="self" href="https://heeiya.github.io/KDEBlog/zh/atom.xml"/>
+  <link rel="alternate" href="https://heeiya.github.io/KDEBlog/zh/"/>
   <category term="OSPP"/>
   <category term="introduction"/>
   <category term="History"/>
   <entry>
     <title type="text">2024OSPP KDE社区项目：Porting KDE Games to Android platform</title>
-    <id>https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/2024OSPP%20KDE%E7%A4%BE%E5%8C%BA%E9%A1%B9%E7%9B%AE%EF%BC%9APorting%20KDE%20Games%20to%20Android%20platform.html</id>
-    <link href="https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/2024OSPP%20KDE%E7%A4%BE%E5%8C%BA%E9%A1%B9%E7%9B%AE%EF%BC%9APorting%20KDE%20Games%20to%20Android%20platform.html"/>
+    <id>https://heeiya.github.io/KDEBlog/zh/posts/2024OSPP%20KDE%E7%A4%BE%E5%8C%BA%E9%A1%B9%E7%9B%AE%EF%BC%9APorting%20KDE%20Games%20to%20Android%20platform.html</id>
+    <link href="https://heeiya.github.io/KDEBlog/zh/posts/2024OSPP%20KDE%E7%A4%BE%E5%8C%BA%E9%A1%B9%E7%9B%AE%EF%BC%9APorting%20KDE%20Games%20to%20Android%20platform.html"/>
     <updated>2024-07-04T14:24:59.000Z</updated>
     <summary type="html"><![CDATA[
 <p>在2024年开源之夏（OSPP）活动中，我很荣幸被KDE社区的项目：Porting KDE Games to Android platform 选中。这是KDE社区首次参加OSPP，也是他们第一个，而且是唯一一个项目。</p>
@@ -56,8 +56,8 @@ Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollisi
   </entry>
   <entry>
     <title type="text">自我介绍</title>
-    <id>https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/%E5%85%B3%E4%BA%8E%E6%88%91.html</id>
-    <link href="https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/%E5%85%B3%E4%BA%8E%E6%88%91.html"/>
+    <id>https://heeiya.github.io/KDEBlog/zh/posts/%E5%85%B3%E4%BA%8E%E6%88%91.html</id>
+    <link href="https://heeiya.github.io/KDEBlog/zh/posts/%E5%85%B3%E4%BA%8E%E6%88%91.html"/>
     <updated>2024-07-04T14:24:59.000Z</updated>
     <summary type="html"><![CDATA[
 <p>这里暂时是空白</p>
@@ -70,8 +70,8 @@ Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollisi
   </entry>
   <entry>
     <title type="text">Archive Article2</title>
-    <id>https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/archive2.html</id>
-    <link href="https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/archive2.html"/>
+    <id>https://heeiya.github.io/KDEBlog/zh/posts/archive2.html</id>
+    <link href="https://heeiya.github.io/KDEBlog/zh/posts/archive2.html"/>
     <updated>2024-07-04T14:24:59.000Z</updated>
     <summary type="html"><![CDATA[
 <h2>Heading 2</h2>
@@ -90,8 +90,8 @@ Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollisi
   </entry>
   <entry>
     <title type="text">Archive Article1</title>
-    <id>https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/archive1.html</id>
-    <link href="https://heeiya.github.io/KDEBlog/KDEBlog/zh/posts/archive1.html"/>
+    <id>https://heeiya.github.io/KDEBlog/zh/posts/archive1.html</id>
+    <link href="https://heeiya.github.io/KDEBlog/zh/posts/archive1.html"/>
     <updated>2024-07-04T14:24:59.000Z</updated>
     <summary type="html"><![CDATA[
 <h2>Heading 2</h2>
