@@ -1,5 +1,5 @@
 import { blogPlugin } from '@vuepress/plugin-blog'
-import {feedPlugin} from '@vuepress/plugin-feed'
+import { feedPlugin } from '@vuepress/plugin-feed'
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
@@ -84,12 +84,15 @@ export default defineUserConfig({
     feedPlugin({
       // 选项
       rss: true,
-      hostname: 'heeiya.github.io/KDEBlog/',
+      atom: true,
+      json: true,
+      image: "https://avatars.githubusercontent.com/u/90752469?s=400&u=69796f3c09ffaa19d5dc128699599458dadb5d14&v=4",
+      hostname: 'heeiya.github.io/KDEBlog/'
     }),
     blogPlugin({
       devServer: true,
       hostname: 'heeiya.github.io/KDEBlog/',
- 
+
 
       // Only files under posts are articles
       filter: ({ filePathRelative }) =>
