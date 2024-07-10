@@ -6,10 +6,15 @@
     <link>https://heeiya.github.io/KDEBlog/KDEBlog/zh/</link>
     <description>小小博客</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 10 Jul 2024 15:35:52 GMT</pubDate>
-    <lastBuildDate>Wed, 10 Jul 2024 15:35:52 GMT</lastBuildDate>
+    <pubDate>Wed, 10 Jul 2024 15:57:58 GMT</pubDate>
+    <lastBuildDate>Wed, 10 Jul 2024 15:57:58 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+    <image>
+      <title>Blog</title>
+      <url>https://avatars.githubusercontent.com/u/90752469?s=400&amp;u=69796f3c09ffaa19d5dc128699599458dadb5d14&amp;v=4</url>
+      <link>https://heeiya.github.io/KDEBlog/KDEBlog/zh/</link>
+    </image>
     <category>OSPP</category>
     <category>introduction</category>
     <category>History</category>
