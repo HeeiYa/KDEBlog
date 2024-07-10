@@ -4,7 +4,7 @@
   <title>Blog</title>
   <subtitle>A simple blog</subtitle>
   <logo>https://avatars.githubusercontent.com/u/90752469?s=400&amp;u=69796f3c09ffaa19d5dc128699599458dadb5d14&amp;v=4</logo>
-  <updated>2024-07-10T16:17:53.234Z</updated>
+  <updated>2024-07-10T16:26:19.294Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://heeiya.github.io/KDEBlog/atom.xml"/>
   <link rel="alternate" href="https://heeiya.github.io/KDEBlog/"/>
@@ -77,37 +77,5 @@
 ]]></content>
     <category term="introduction"/>
     <published>2021-01-01T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">Get Started</title>
-    <id>https://heeiya.github.io/KDEBlog/get-started.html</id>
-    <link href="https://heeiya.github.io/KDEBlog/get-started.html"/>
-    <updated>2024-07-03T03:46:28.000Z</updated>
-    <summary type="html"><![CDATA[
-<p>This is a normal page, which contains VuePress basics.</p>
-<h2>Pages</h2>
-<p>You can add markdown files in your vuepress directory, every markdown file will be converted to a page in your site.</p>
-<p>See <a href="https://vuejs.press/guide/page.html#routing" target="_blank" rel="noopener noreferrer">routing</a> for more details.</p>]]></summary>
-    <content type="html"><![CDATA[
-<p>This is a normal page, which contains VuePress basics.</p>
-<h2>Pages</h2>
-<p>You can add markdown files in your vuepress directory, every markdown file will be converted to a page in your site.</p>
-<p>See <a href="https://vuejs.press/guide/page.html#routing" target="_blank" rel="noopener noreferrer">routing</a> for more details.</p>
-<h2>Content</h2>
-<p>Every markdown file <a href="https://vuejs.press/guide/page.html#content" target="_blank" rel="noopener noreferrer">will be rendered to HTML, then converted to a Vue SFC</a>.</p>
-<p>VuePress support basic markdown syntax and <a href="https://vuejs.press/guide/markdown.html#syntax-extensions" target="_blank" rel="noopener noreferrer">some extensions</a>, you can also <a href="https://vuejs.press/guide/markdown.html#using-vue-in-markdown" target="_blank" rel="noopener noreferrer">use Vue features</a> in it.</p>
-<h2>Configuration</h2>
-<p>VuePress use a <code>.vuepress/config.js</code>(or .ts) file as <a href="https://vuejs.press/guide/configuration.html#client-config-file" target="_blank" rel="noopener noreferrer">site configuration</a>, you can use it to config your site.</p>
-<p>For <a href="https://vuejs.press/guide/configuration.html#client-config-file" target="_blank" rel="noopener noreferrer">client side configuration</a>, you can create <code>.vuepress/client.js</code>(or .ts).</p>
-<p>Meanwhile, you can also add configuration per page with <a href="https://vuejs.press/guide/page.html#frontmatter" target="_blank" rel="noopener noreferrer">frontmatter</a>.</p>
-<h2>Layouts and customization</h2>
-<p>Here are common configuration controlling layout of <code>@vuepress/theme-default</code>:</p>
-<ul>
-<li><a href="https://vuejs.press/reference/default-theme/config.html#navbar" target="_blank" rel="noopener noreferrer">navbar</a></li>
-<li><a href="https://vuejs.press/reference/default-theme/config.html#sidebar" target="_blank" rel="noopener noreferrer">sidebar</a></li>
-</ul>
-<p>Check <a href="https://vuejs.press/reference/default-theme/" target="_blank" rel="noopener noreferrer">default theme docs</a> for full reference.</p>
-<p>You can <a href="https://vuejs.press/reference/default-theme/styles.html#style-file" target="_blank" rel="noopener noreferrer">add extra style</a> with <code>.vuepress/styles/index.scss</code> file.</p>
-]]></content>
   </entry>
 </feed>

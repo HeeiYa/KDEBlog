@@ -31,16 +31,6 @@
       "tags": [
         "introduction"
       ]
-    },
-    {
-      "title": "Get Started",
-      "url": "https://heeiya.github.io/KDEBlog/get-started.html",
-      "id": "https://heeiya.github.io/KDEBlog/get-started.html",
-      "summary": "Get Started\nThis is a normal page, which contains VuePress basics.\nPages\nYou can add markdown files in your vuepress directory, every markdown file will be converted to a page i...",
-      "content_html": "\n<p>This is a normal page, which contains VuePress basics.</p>\n<h2>Pages</h2>\n<p>You can add markdown files in your vuepress directory, every markdown file will be converted to a page in your site.</p>\n<p>See <a href=\"https://vuejs.press/guide/page.html#routing\" target=\"_blank\" rel=\"noopener noreferrer\">routing</a> for more details.</p>\n<h2>Content</h2>\n<p>Every markdown file <a href=\"https://vuejs.press/guide/page.html#content\" target=\"_blank\" rel=\"noopener noreferrer\">will be rendered to HTML, then converted to a Vue SFC</a>.</p>\n<p>VuePress support basic markdown syntax and <a href=\"https://vuejs.press/guide/markdown.html#syntax-extensions\" target=\"_blank\" rel=\"noopener noreferrer\">some extensions</a>, you can also <a href=\"https://vuejs.press/guide/markdown.html#using-vue-in-markdown\" target=\"_blank\" rel=\"noopener noreferrer\">use Vue features</a> in it.</p>\n<h2>Configuration</h2>\n<p>VuePress use a <code>.vuepress/config.js</code>(or .ts) file as <a href=\"https://vuejs.press/guide/configuration.html#client-config-file\" target=\"_blank\" rel=\"noopener noreferrer\">site configuration</a>, you can use it to config your site.</p>\n<p>For <a href=\"https://vuejs.press/guide/configuration.html#client-config-file\" target=\"_blank\" rel=\"noopener noreferrer\">client side configuration</a>, you can create <code>.vuepress/client.js</code>(or .ts).</p>\n<p>Meanwhile, you can also add configuration per page with <a href=\"https://vuejs.press/guide/page.html#frontmatter\" target=\"_blank\" rel=\"noopener noreferrer\">frontmatter</a>.</p>\n<h2>Layouts and customization</h2>\n<p>Here are common configuration controlling layout of <code>@vuepress/theme-default</code>:</p>\n<ul>\n<li><a href=\"https://vuejs.press/reference/default-theme/config.html#navbar\" target=\"_blank\" rel=\"noopener noreferrer\">navbar</a></li>\n<li><a href=\"https://vuejs.press/reference/default-theme/config.html#sidebar\" target=\"_blank\" rel=\"noopener noreferrer\">sidebar</a></li>\n</ul>\n<p>Check <a href=\"https://vuejs.press/reference/default-theme/\" target=\"_blank\" rel=\"noopener noreferrer\">default theme docs</a> for full reference.</p>\n<p>You can <a href=\"https://vuejs.press/reference/default-theme/styles.html#style-file\" target=\"_blank\" rel=\"noopener noreferrer\">add extra style</a> with <code>.vuepress/styles/index.scss</code> file.</p>\n",
-      "date_modified": "2024-07-03T03:46:28.000Z",
-      "authors": [],
-      "tags": []
     }
   ]
 }

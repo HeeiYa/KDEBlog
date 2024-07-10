@@ -4,7 +4,7 @@
   <title>Blog</title>
   <subtitle>小小博客</subtitle>
   <logo>https://avatars.githubusercontent.com/u/90752469?s=400&amp;u=69796f3c09ffaa19d5dc128699599458dadb5d14&amp;v=4</logo>
-  <updated>2024-07-10T16:17:53.234Z</updated>
+  <updated>2024-07-10T16:26:19.294Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://heeiya.github.io/KDEBlog/zh/atom.xml"/>
   <link rel="alternate" href="https://heeiya.github.io/KDEBlog/zh/"/>
@@ -87,25 +87,5 @@ Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollisi
 ]]></content>
     <category term="History"/>
     <published>1998-01-02T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">Archive Article1</title>
-    <id>https://heeiya.github.io/KDEBlog/zh/posts/archive1.html</id>
-    <link href="https://heeiya.github.io/KDEBlog/zh/posts/archive1.html"/>
-    <updated>2024-07-04T14:24:59.000Z</updated>
-    <summary type="html"><![CDATA[
-<h2>Heading 2</h2>
-<p>Here is the content.</p>
-<h3>Heading 3</h3>
-<p>Here is the content.</p>
-]]></summary>
-    <content type="html"><![CDATA[
-<h2>Heading 2</h2>
-<p>Here is the content.</p>
-<h3>Heading 3</h3>
-<p>Here is the content.</p>
-]]></content>
-    <category term="History"/>
-    <published>1998-01-01T00:00:00.000Z</published>
   </entry>
 </feed>
