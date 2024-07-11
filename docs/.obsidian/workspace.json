@@ -8,26 +8,14 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c6585ee686822f20",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "zh/posts/archive2.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1fc25818514d528f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "zh/posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
+                "file": "README.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zh/posts/archive2.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zh/posts/archive2.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zh/posts/archive2.md"
+                "file": "README.md"
               }
             }
           }
@@ -158,17 +146,18 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "c6585ee686822f20",
+  "active": "1fc25818514d528f",
   "lastOpenFiles": [
-    "zh/posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
-    "posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
-    "posts/关于我.md",
-    "README.md",
-    "posts",
     "zh/README.md",
+    "README.md",
     "zh/posts/关于我.md",
-    "zh/posts/images",
+    "posts/关于我.md",
+    "posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
+    "zh/posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
+    "images/Pasted image 20240711103028.png",
     "zh/posts/archive2.md",
+    "posts",
+    "images",
     "zh/posts/archive1.md",
     "zh/posts",
     "新建文件夹/README.md",

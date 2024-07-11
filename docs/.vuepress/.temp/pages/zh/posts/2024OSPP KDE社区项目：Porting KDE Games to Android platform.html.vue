@@ -1,10 +1,12 @@
 <template><div><h1 id="_2024ospp-kde社区项目-porting-kde-games-to-android-platform" tabindex="-1"><a class="header-anchor" href="#_2024ospp-kde社区项目-porting-kde-games-to-android-platform"><span>2024OSPP KDE社区项目：Porting KDE Games to Android platform</span></a></h1>
 <p>在2024年开源之夏（OSPP）活动中，我很荣幸被KDE社区的项目：Porting KDE Games to Android platform 选中。这是KDE社区首次参加OSPP，也是他们第一个，而且是唯一一个项目。</p>
+<img src="https://i1.hdslb.com/bfs/article/035f0f7b50173a3b3736421e80ce94bc2010658923.png@1192w.avif">
 <p>关于OSPP（开源之夏）：</p>
 <blockquote>
 <p>开源之夏是由“<strong>开源软件供应链点亮计划</strong>”发起并长期支持的一项暑期开源活动，旨在鼓励在校学生积极参与开源软件的开发维护，促进优秀开源软件社区的蓬勃发展，培养和发掘更多优秀的开发者。 活动联合国内外各大开源社区，针对重要开源软件的开发与维护提供项目任务，并面向全球高校学生开放报名。
 <a href="https://summer-ospp.ac.cn/?lang=en" target="_blank" rel="noopener noreferrer">开源软件供应链点亮计划-开源之夏2024</a></p>
 </blockquote>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/KDE_logo.svg/330px-KDE_logo.svg.png">
 <p>关于KDE社区：
 <a href="https://userbase.kde.org/What_is_KDE/zh-cn" target="_blank" rel="noopener noreferrer">什么是 KDE - KDE UserBase Wiki</a></p>
 <blockquote>

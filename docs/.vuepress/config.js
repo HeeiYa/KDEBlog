@@ -16,12 +16,12 @@ export default defineUserConfig({
     '/': {
       lang: 'en-US',
       title: 'Blog',
-      description: 'A simple blog',
+      description: 'A blog now mainly about my particpation in OSPP with KDE ',
     },
     '/zh/': {
       lang: 'zh-CN',
       title: 'Blog',
-      description: '小小博客',
+      description: '关于参与OSPP中KDE社区的开发',
     },
   },
 

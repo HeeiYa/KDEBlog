@@ -1,5 +1,4 @@
-<template><div><p>这是一个主页</p>
-<!--
+<template><div><!--
 %% 
 
 features:
