@@ -4,10 +4,10 @@
     <atom:link href="https://heeiya.github.io/KDEBlog/rss.xml" rel="self" type="application/rss+xml"/>
     <title>Blog</title>
     <link>https://heeiya.github.io/KDEBlog/</link>
-    <description>A simple blog</description>
+    <description>A blog now mainly about my particpation in OSPP with KDE </description>
     <language>en-US</language>
-    <pubDate>Wed, 10 Jul 2024 16:26:19 GMT</pubDate>
-    <lastBuildDate>Wed, 10 Jul 2024 16:26:19 GMT</lastBuildDate>
+    <pubDate>Thu, 11 Jul 2024 03:40:28 GMT</pubDate>
+    <lastBuildDate>Thu, 11 Jul 2024 03:40:28 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>

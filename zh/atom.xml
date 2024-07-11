@@ -2,22 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
   <id>https://heeiya.github.io/KDEBlog/zh/</id>
   <title>Blog</title>
-  <subtitle>小小博客</subtitle>
+  <subtitle>关于参与OSPP中KDE社区的开发</subtitle>
   <logo>https://avatars.githubusercontent.com/u/90752469?s=400&amp;u=69796f3c09ffaa19d5dc128699599458dadb5d14&amp;v=4</logo>
-  <updated>2024-07-10T16:26:19.294Z</updated>
+  <updated>2024-07-11T03:40:28.766Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://heeiya.github.io/KDEBlog/zh/atom.xml"/>
   <link rel="alternate" href="https://heeiya.github.io/KDEBlog/zh/"/>
   <category term="OSPP"/>
   <category term="introduction"/>
-  <category term="History"/>
   <entry>
     <title type="text">2024OSPP KDE社区项目：Porting KDE Games to Android platform</title>
     <id>https://heeiya.github.io/KDEBlog/zh/posts/2024OSPP%20KDE%E7%A4%BE%E5%8C%BA%E9%A1%B9%E7%9B%AE%EF%BC%9APorting%20KDE%20Games%20to%20Android%20platform.html</id>
     <link href="https://heeiya.github.io/KDEBlog/zh/posts/2024OSPP%20KDE%E7%A4%BE%E5%8C%BA%E9%A1%B9%E7%9B%AE%EF%BC%9APorting%20KDE%20Games%20to%20Android%20platform.html"/>
-    <updated>2024-07-04T14:24:59.000Z</updated>
+    <updated>2024-07-11T03:39:58.000Z</updated>
     <summary type="html"><![CDATA[
 <p>在2024年开源之夏（OSPP）活动中，我很荣幸被KDE社区的项目：Porting KDE Games to Android platform 选中。这是KDE社区首次参加OSPP，也是他们第一个，而且是唯一一个项目。</p>
+<img src="https://i1.hdslb.com/bfs/article/035f0f7b50173a3b3736421e80ce94bc2010658923.png@1192w.avif">
 <p>关于OSPP（开源之夏）：</p>
 <blockquote>
 <p>开源之夏是由“<strong>开源软件供应链点亮计划</strong>”发起并长期支持的一项暑期开源活动，旨在鼓励在校学生积极参与开源软件的开发维护，促进优秀开源软件社区的蓬勃发展，培养和发掘更多优秀的开发者。 活动联合国内外各大开源社区，针对重要开源软件的开发与维护提供项目任务，并面向全球高校学生开放报名。
@@ -25,11 +25,13 @@
 </blockquote>]]></summary>
     <content type="html"><![CDATA[
 <p>在2024年开源之夏（OSPP）活动中，我很荣幸被KDE社区的项目：Porting KDE Games to Android platform 选中。这是KDE社区首次参加OSPP，也是他们第一个，而且是唯一一个项目。</p>
+<img src="https://i1.hdslb.com/bfs/article/035f0f7b50173a3b3736421e80ce94bc2010658923.png@1192w.avif">
 <p>关于OSPP（开源之夏）：</p>
 <blockquote>
 <p>开源之夏是由“<strong>开源软件供应链点亮计划</strong>”发起并长期支持的一项暑期开源活动，旨在鼓励在校学生积极参与开源软件的开发维护，促进优秀开源软件社区的蓬勃发展，培养和发掘更多优秀的开发者。 活动联合国内外各大开源社区，针对重要开源软件的开发与维护提供项目任务，并面向全球高校学生开放报名。
 <a href="https://summer-ospp.ac.cn/?lang=en" target="_blank" rel="noopener noreferrer">开源软件供应链点亮计划-开源之夏2024</a></p>
 </blockquote>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/KDE_logo.svg/330px-KDE_logo.svg.png">
 <p>关于KDE社区：
 <a href="https://userbase.kde.org/What_is_KDE/zh-cn" target="_blank" rel="noopener noreferrer">什么是 KDE - KDE UserBase Wiki</a></p>
 <blockquote>
@@ -67,25 +69,5 @@ Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollisi
 ]]></content>
     <category term="introduction"/>
     <published>2021-01-01T00:00:00.000Z</published>
-  </entry>
-  <entry>
-    <title type="text">Archive Article2</title>
-    <id>https://heeiya.github.io/KDEBlog/zh/posts/archive2.html</id>
-    <link href="https://heeiya.github.io/KDEBlog/zh/posts/archive2.html"/>
-    <updated>2024-07-04T14:24:59.000Z</updated>
-    <summary type="html"><![CDATA[
-<h2>Heading 2</h2>
-<p>Here is the content.</p>
-<h3>Heading 3</h3>
-<p>Here is the content.</p>
-]]></summary>
-    <content type="html"><![CDATA[
-<h2>Heading 2</h2>
-<p>Here is the content.</p>
-<h3>Heading 3</h3>
-<p>Here is the content.</p>
-]]></content>
-    <category term="History"/>
-    <published>1998-01-02T00:00:00.000Z</published>
   </entry>
 </feed>

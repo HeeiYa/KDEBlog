@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
   <id>https://heeiya.github.io/KDEBlog/</id>
   <title>Blog</title>
-  <subtitle>A simple blog</subtitle>
+  <subtitle>A blog now mainly about my particpation in OSPP with KDE </subtitle>
   <logo>https://avatars.githubusercontent.com/u/90752469?s=400&amp;u=69796f3c09ffaa19d5dc128699599458dadb5d14&amp;v=4</logo>
-  <updated>2024-07-10T16:26:19.294Z</updated>
+  <updated>2024-07-11T03:40:28.766Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://heeiya.github.io/KDEBlog/atom.xml"/>
   <link rel="alternate" href="https://heeiya.github.io/KDEBlog/"/>
