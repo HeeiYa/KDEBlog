@@ -6,8 +6,8 @@
     <link>https://heeiya.github.io/KDEBlog/</link>
     <description>A blog now mainly about my particpation in OSPP with KDE </description>
     <language>en-US</language>
-    <pubDate>Thu, 11 Jul 2024 03:40:28 GMT</pubDate>
-    <lastBuildDate>Thu, 11 Jul 2024 03:40:28 GMT</lastBuildDate>
+    <pubDate>Mon, 15 Jul 2024 01:33:52 GMT</pubDate>
+    <lastBuildDate>Mon, 15 Jul 2024 01:33:52 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -28,10 +28,12 @@ During the 2024 Open Source Promotion Plan (OSPP) event, I had the honor of bein
       <pubDate>Wed, 03 Jul 2024 00:00:00 GMT</pubDate>
       <content:encoded><![CDATA[
 <p>During the 2024 Open Source Promotion Plan (OSPP) event, I had the honor of being selected for the KDE community project: Porting KDE Games to the Android platform. This is KDE community's first participation in OSPP, and it is their first and only project.</p>
+<img src="https://i1.hdslb.com/bfs/article/035f0f7b50173a3b3736421e80ce94bc2010658923.png@1192w.avif">
 <p>About OSPP (Open Source Promotion Plan):</p>
 <blockquote>
 <p>The Open Source Promotion Plan is a summer open source event initiated and long-term supported by the "<strong>Open Source Software Supply Chain Lighting Plan</strong>". It aims to encourage students to actively participate in the development and maintenance of open source software, promote the vigorous development of outstanding open source software communities, and cultivate and discover more excellent developers. The event collaborates with major open source communities at home and abroad, providing project tasks for the development and maintenance of important open source software and is open to global college students for registration. <a href="https://summer-ospp.ac.cn/?lang=en" target="_blank" rel="noopener noreferrer">Open Source Software Supply Chain Lighting Plan - OSPP 2024</a></p>
 </blockquote>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/KDE_logo.svg/330px-KDE_logo.svg.png">
 <p>About the KDE Community: <a href="https://userbase.kde.org/What_is_KDE/zh-cn" target="_blank" rel="noopener noreferrer">What is KDE - KDE UserBase Wiki</a></p>
 <blockquote>
 <p>KDE is a large <strong>community</strong> of programmers, translators, contributors, artists, authors, distributors, and users from around the world, dedicated to creating the best free software for desktops. Users and fans of KDE software are also spread globally, helping each other, spreading community news, or just enjoying this wonderful experience.</p>
