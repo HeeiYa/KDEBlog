@@ -13,9 +13,13 @@ excerpt: <p> about my OSPP KDE project </p>
 
 During the 2024 Open Source Promotion Plan (OSPP) event, I had the honor of being selected for the KDE community project: Porting KDE Games to the Android platform. This is KDE community's first participation in OSPP, and it is their first and only project.
 
+<img src="https://i1.hdslb.com/bfs/article/035f0f7b50173a3b3736421e80ce94bc2010658923.png@1192w.avif">
+
 About OSPP (Open Source Promotion Plan):
 
 > The Open Source Promotion Plan is a summer open source event initiated and long-term supported by the "**Open Source Software Supply Chain Lighting Plan**". It aims to encourage students to actively participate in the development and maintenance of open source software, promote the vigorous development of outstanding open source software communities, and cultivate and discover more excellent developers. The event collaborates with major open source communities at home and abroad, providing project tasks for the development and maintenance of important open source software and is open to global college students for registration. [Open Source Software Supply Chain Lighting Plan - OSPP 2024](https://summer-ospp.ac.cn/?lang=en)
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/KDE_logo.svg/330px-KDE_logo.svg.png">
 
 About the KDE Community: [What is KDE - KDE UserBase Wiki](https://userbase.kde.org/What_is_KDE/zh-cn)
 
