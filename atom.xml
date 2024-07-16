@@ -4,7 +4,7 @@
   <title>Blog</title>
   <subtitle>A blog now mainly about my particpation in OSPP with KDE </subtitle>
   <logo>https://avatars.githubusercontent.com/u/90752469?s=400&amp;u=69796f3c09ffaa19d5dc128699599458dadb5d14&amp;v=4</logo>
-  <updated>2024-07-15T02:20:59.176Z</updated>
+  <updated>2024-07-16T02:12:53.037Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://heeiya.github.io/KDEBlog/atom.xml"/>
   <link rel="alternate" href="https://heeiya.github.io/KDEBlog/"/>
@@ -14,7 +14,7 @@
     <title type="text">2024OSPP KDE社区项目：Porting KDE Games to Android platform</title>
     <id>https://heeiya.github.io/KDEBlog/posts/2024OSPP%20KDE%E7%A4%BE%E5%8C%BA%E9%A1%B9%E7%9B%AE%EF%BC%9APorting%20KDE%20Games%20to%20Android%20platform.html</id>
     <link href="https://heeiya.github.io/KDEBlog/posts/2024OSPP%20KDE%E7%A4%BE%E5%8C%BA%E9%A1%B9%E7%9B%AE%EF%BC%9APorting%20KDE%20Games%20to%20Android%20platform.html"/>
-    <updated>2024-07-15T02:20:30.000Z</updated>
+    <updated>2024-07-16T02:12:24.000Z</updated>
     <summary type="html"><![CDATA[
 <p>During the 2024 Open Source Promotion Plan (OSPP) event, I had the honor of being selected for the KDE community project: Porting KDE Games to the Android platform. This is KDE community's first participation in OSPP, and it is their first and only project.</p>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/KDE_logo.svg/330px-KDE_logo.svg.png">]]></summary>
@@ -39,9 +39,11 @@
 <p>Finally, you will port one or more of these games to Android and facilitate community efforts to distribute them through software stores.</p>
 </blockquote>
 <p>In simple terms, the project involves porting some KDE games to the Android platform, as these games are currently only available on the Linux platform. If you use Ubuntu, you can install and run a game with the following commands:</p>
-<div class="language-bash" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre class="language-bash"><code><span class="line"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> Kollision</span>
-<span class="line">kollision</span>
-<span class="line"></span></code></pre></div><p>Available games include Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollision, KSudoku, KTurtle, Picmi, and Klines. However, for the completion of the project, porting just one game is sufficient.</p>
+<ol>
+<li>sudo apt install Kollision</li>
+<li>kollision</li>
+</ol>
+<p>Available games include Kajongg, KMahjongg, KShisen, Kigo, Blinken, Klickety, Skladnik, Kbounce, Kollision, KSudoku, KTurtle, Picmi, and Klines. However, for the completion of the project, porting just one game is sufficient.</p>
 <h2>My Application Experience</h2>
 <p>When I first saw this project, it was quite late, with less than a week before the application deadline. Before that, I had already written an application for another project. However, after seeing this project, I felt it was more appealing to me. Unfortunately, at that time, I was preparing for an exam, so I had only two days left to write the application.</p>
 <p>After pulling an all-nighter, I submitted my application and listed this project as my first choice. Finally, on June 26, I received an email confirming that my application had been accepted.</p>
