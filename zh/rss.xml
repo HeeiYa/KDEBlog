@@ -6,8 +6,8 @@
     <link>https://heeiya.github.io/KDEBlog/zh/</link>
     <description>关于参与OSPP中KDE社区的开发</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 24 Jul 2024 14:22:12 GMT</pubDate>
-    <lastBuildDate>Wed, 24 Jul 2024 14:22:12 GMT</lastBuildDate>
+    <pubDate>Wed, 24 Jul 2024 14:26:45 GMT</pubDate>
+    <lastBuildDate>Wed, 24 Jul 2024 14:26:45 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -119,7 +119,8 @@ OSPP项目开始已经过去三周了，三周过去，我的项目已经取得�
 <p>Tic-Tac-Toe游戏目前已经被我放到KDE invent上开源。<a href="https://invent.kde.org/zhy/tictactoe" target="_blank" rel="noopener noreferrer">hanyang zhang / TicTacToe · GitLab</a></p>
 <p>对QML应用做本地化支持需要使用Qt提供的本地化工具lupdate、lrelease等。
 但是因为项目使用Cmake构建，Qt也提供了相应的Cmake方法：<a href="https://doc.qt.io/qt-6/qtlinguist-cmake-qt-add-translations.html" target="_blank" rel="noopener noreferrer">qt_add_translations | Qt Linguist Manual</a></p>
-<p>另外，我在构建QML安卓应用时遇到了一些困难，见：</p>
+<p>另外，我在构建QML安卓应用时遇到了一些困难，见：
+<a href="https://heeiya.github.io/KDEBlog/zh/posts/QML%20%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%BF%90%E8%A1%8C.html" target="_blank" rel="noopener noreferrer">QML 安卓应用构建与运行 | Blog</a></p>
 <h2>第三周 7月15号——7月21号</h2>
 <p>在这一周我正式开始迁移Blinken的工作。</p>
 <p>在研究了Blinken的源码之后，我发现Blinken的界面是由一个名为Blinken的类绘制的，这个类有1000多行，绘制逻辑一部分为操作Blinken.svg中元素，另外一部分为使用QPainter直接绘制。</p>
