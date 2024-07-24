@@ -4,12 +4,104 @@
   <title>Blog</title>
   <subtitle>A blog now mainly about my particpation in OSPP with KDE </subtitle>
   <logo>https://avatars.githubusercontent.com/u/90752469?s=400&amp;u=69796f3c09ffaa19d5dc128699599458dadb5d14&amp;v=4</logo>
-  <updated>2024-07-16T02:12:53.037Z</updated>
+  <updated>2024-07-24T14:22:12.851Z</updated>
   <generator>@vuepress/plugin-feed</generator>
   <link rel="self" href="https://heeiya.github.io/KDEBlog/atom.xml"/>
   <link rel="alternate" href="https://heeiya.github.io/KDEBlog/"/>
   <category term="OSPP"/>
   <category term="introduction"/>
+  <entry>
+    <title type="text">Building and Running QML Android Applications</title>
+    <id>https://heeiya.github.io/KDEBlog/posts/QML%20%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%BF%90%E8%A1%8C.html</id>
+    <link href="https://heeiya.github.io/KDEBlog/posts/QML%20%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%BF%90%E8%A1%8C.html"/>
+    <updated>2024-07-24T14:21:33.000Z</updated>
+    <summary type="html"><![CDATA[
+<h2>Building QML Android Applications</h2>
+<p>Qt Creator uses Gradle for project building. Once your project code is ready, select the Android kit for building in Qt Creator. Click build, and Qt Creator will generate Gradle configuration files for you. However, you may encounter errors such as:</p>]]></summary>
+    <content type="html"><![CDATA[
+<h2>Building QML Android Applications</h2>
+<p>Qt Creator uses Gradle for project building. Once your project code is ready, select the Android kit for building in Qt Creator. Click build, and Qt Creator will generate Gradle configuration files for you. However, you may encounter errors such as:</p>
+<blockquote>
+<p>Execution failed for task ':processDebugResources'.
+A failure occurred while executing com.android.build.gradle.internal.res.LinkApplicationAndroidResourcesTask$TaskAction
+Android resource linking failed
+aapt2 E 07-23 15:59:44 51907 51907 LoadedArsc.cpp:94] RES_TABLE_TYPE_TYPE entry offsets overlap actual entry data.
+aapt2 E 07-23 15:59:44 51907 51907 ApkAssets.cpp:149] Failed to load resources table in APK '/home/zhy/Android/Sdk/platforms/android-35/android.jar'.</p>
+</blockquote>
+<p>This is because the current Gradle plugin version does not support android-35. See<a href="https://stackoverflow.com/questions/54152209/how-to-fix-execution-failed-for-task-appprocessdebugresources-android-re" target="_blank" rel="noopener noreferrer">How to fix "Execution failed for task ':app:processDebugResources'. &gt; Android resource linking failed"[Android/Flutter] - Stack Overflow</a></p>
+<p>To resolve this issue, you need to modify the Gradle configuration.</p>
+<p>Navigate to the <code>/build/Qt_6_7_2_Clang_arm64_v8a-Debug/android-build</code> folder in your project.</p>
+<p>Open the <code>build.gradle</code> file and locate the <code>dependencies</code> block:</p>
+<div class="language-text" data-highlighter="prismjs" data-ext="text" data-title="text"><pre class="language-text"><code><span class="line">dependencies {</span>
+<span class="line">        classpath 'com.android.tools.build:gradle:7.4.1'</span>
+<span class="line">    }</span>
+<span class="line"></span>
+<span class="line"></span></code></pre></div><p><code>com.android.tools.build:gradle:7.4.1</code> refers to the Android Gradle Plugin (AGP). This default version is from 2022 and is quite outdated.</p>
+<p>You can find the latest version here: <a href="https://mvnrepository.com/artifact/com.android.tools.build/gradle?repo=google" target="_blank" rel="noopener noreferrer">Maven Repository: com.android.tools.build » gradle</a></p>
+<p>Update the plugin version to a newer one, for example:</p>
+<div class="language-text" data-highlighter="prismjs" data-ext="text" data-title="text"><pre class="language-text"><code><span class="line">    dependencies {</span>
+<span class="line">        classpath 'com.android.tools.build:gradle:8.4.1'</span>
+<span class="line">    }</span>
+<span class="line"></span></code></pre></div><p>Additionally, when upgrading the plugin version, ensure compatibility with the <a href="https://gradle.org/releases/" target="_blank" rel="noopener noreferrer">Gradle version</a>.</p>
+<p>Check the relationship between the Gradle and AGP versions here: <a href="https://developer.android.com/build/releases/gradle-plugin#updating-gradle" target="_blank" rel="noopener noreferrer">Android Gradle plugin 8.5 release notes | Android Studio | Android Developers</a></p>
+<blockquote>
+<p>Reference: <a href="https://stackoverflow.com/questions/70545646/could-not-find-com-android-tools-buildgradle7-3-3-error-found-in-build-gradle" target="_blank" rel="noopener noreferrer">Could not find com.android.tools.build:gradle:7.3.3. error found in build.gradle file - Stack Overflow</a></p>
+</blockquote>
+<p>Therefore, you should use at least Gradle version 8.6 to support this plugin.</p>
+<p>Navigate to the <code>./gradle/wrapper</code> folder and open the <code>gradle-wrapper.properties</code> file. This file defines the Gradle version used by the project.</p>
+<p>Find the line:
+<code>distributionUrl=https\://services.gradle.org/distributions/gradle-8.3-bin.zip</code></p>
+<p>Change it to:</p>
+<p><code>distributionUrl=https\://services.gradle.org/distributions/gradle-8.6-bin.zip</code></p>
+<p>This update specifies that the project will use Gradle version 8.6.</p>
+<p>After making these changes, click on build. It will automatically download the specified version of Gradle and then download the necessary Gradle plugins.</p>
+<p>If successful, you can find the built APK at <code>./build/outputs/apk/debug</code>.</p>
+<h2>Running and Installing APK</h2>
+<p>In a Linux environment, you can use the adb command to install the APK on your Android device. Alternatively, you can use Qt Creator for one-click deployment.</p>
+<p>After connecting your Android device via USB, use the adb command to install the APK:</p>
+<div class="language-bash" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre class="language-bash"><code><span class="line">adb <span class="token function">install</span> android-build-debug.apk</span>
+<span class="line"></span></code></pre></div><p>Make sure that your Android device has Developer Mode enabled. You can find specific instructions on how to enable Developer Mode based on your device model through an online search.</p>
+]]></content>
+    <published>2024-07-23T00:00:00.000Z</published>
+  </entry>
+  <entry>
+    <title type="text">Mid-Term Summary of 2024 OSPP KDE Project</title>
+    <id>https://heeiya.github.io/KDEBlog/posts/2024OSPP%20KDE%E9%A1%B9%E7%9B%AE%E4%B8%AD%E6%9C%9F%E6%80%BB%E7%BB%93.html</id>
+    <link href="https://heeiya.github.io/KDEBlog/posts/2024OSPP%20KDE%E9%A1%B9%E7%9B%AE%E4%B8%AD%E6%9C%9F%E6%80%BB%E7%BB%93.html"/>
+    <updated>2024-07-24T14:21:33.000Z</updated>
+    <summary type="html"><![CDATA[
+<p>It has been three weeks since the start of the OSPP project, during which my project has made some progress.</p>
+<h2>Week 1, July 1st to July 7th</h2>
+<p>In the first week of the project, with the help of my mentor, I first set up a suitable development environment and identified Blinken as the first application to be migrated for the project. In addition to this, I also set up this project's blog, which has now been included in KDE Planet.</p>]]></summary>
+    <content type="html"><![CDATA[
+<p>It has been three weeks since the start of the OSPP project, during which my project has made some progress.</p>
+<h2>Week 1, July 1st to July 7th</h2>
+<p>In the first week of the project, with the help of my mentor, I first set up a suitable development environment and identified Blinken as the first application to be migrated for the project. In addition to this, I also set up this project's blog, which has now been included in KDE Planet.</p>
+<p>Currently, I am using a development environment on a VirtualBox virtual machine running Fedora Workstation 40. With this setup, I can compile and build KDE applications and perform Qt development.</p>
+<p>For building the KDE development environment, it is recommended to use<a href="https://develop.kde.org/docs/getting-started/building/kdesrc-build-setup/" target="_blank" rel="noopener noreferrer">kdesrc-build</a> provided by KDE official, and it is also recommended to develop under KDE Neon system, which can be done using <a href="https://community.kde.org/Get_Involved/development/More#Develop_in_a_Linux_container" target="_blank" rel="noopener noreferrer">docker</a> or <a href="https://community.kde.org/Get_Involved/development/Developing_in_a_virtual_machine" target="_blank" rel="noopener noreferrer">virtual machines</a></p>
+<p>A straightforward method for setting up Qt Android development environment is to use[Qt Online Installer](<a href="https://doc.qt.io/qt-6/get-and-install-qt.html#using-qt-maintenance-tool" target="_blank" rel="noopener noreferrer">Get and Install Qt | Qt 6.7</a>) and Qt Creator. After installing Qt Creator, navigate to Editing -&gt; Preferences -&gt; Devices -&gt; Android to select the necessary development kit. Qt Creator will automatically download the required SDK and NDK.</p>
+<h2>Week 2, July 8th to July 14th</h2>
+<p>Upon my mentor's suggestion, I developed a simple Tic-Tac-Toe QML game as a practice exercise. This game uses QML to create a simple interface and employs a C++ class to handle game logic, which will also be the architecture for the upcoming game migration.</p>
+<p>The current features implemented in the game are:</p>
+<ol>
+<li>Multilingual localization support</li>
+<li>Unit testing capability</li>
+<li>Cross-platform compatibility</li>
+</ol>
+<p>The Tic-Tac-Toe game has been open-sourced on KDE Invent: <a href="https://invent.kde.org/zhy/tictactoe" target="_blank" rel="noopener noreferrer">hanyang zhang / TicTacToe · GitLab</a></p>
+<p>Supporting localization for QML applications requires the use of Qt's localization tools such as lupdate and lrelease. However, since the project is built with CMake, Qt also provides corresponding CMake methods: <a href="https://doc.qt.io/qt-6/qtlinguist-cmake-qt-add-translations.html" target="_blank" rel="noopener noreferrer">qt_add_translations | Qt Linguist Manual</a></p>
+<p>Additionally, I encountered some difficulties while building QML Android applications, as described here:</p>
+<h2>Week 3, July 15th to July 21st</h2>
+<p>During this week, I officially began the migration work for Blinken.</p>
+<p>After studying Blinken's source code, I found that the interface of Blinken is drawn by a class named Blinken, which spans over 1000 lines. The drawing logic involves manipulating elements from Blinken.svg and using QPainter for direct drawing.</p>
+<p>Unfortunately, QML does not provide built-in support for manipulating SVG images like QtWidgets. Therefore, I split the SVG images into separate files and assembled these elements using QML.</p>
+<p></p>
+<p>Modifying the UI took longer than I anticipated. However, after a week, I have nearly completed the interface drawing for Blinken. Next steps involve refining some page details and migrating Blinken's logic over.</p>
+<p>It's worth mentioning that QML does not provide a non-rectangular MouseArea for use, requiring the creation of a custom class to achieve this functionality. Fortunately, an example for this existed in earlier versions of the documentation: <a href="https://code.qt.io/cgit/qt/qtdeclarative.git/tree/examples/quick/customitems/maskedmousearea?h=6.2" target="_blank" rel="noopener noreferrer">maskedmousearea example</a>. Although this example seems to have been removed in the latest version, it should still be feasible to implement based on reference.</p>
+]]></content>
+    <category term="OSPP"/>
+    <published>2024-07-21T00:00:00.000Z</published>
+  </entry>
   <entry>
     <title type="text">2024OSPP KDE社区项目：Porting KDE Games to Android platform</title>
     <id>https://heeiya.github.io/KDEBlog/posts/2024OSPP%20KDE%E7%A4%BE%E5%8C%BA%E9%A1%B9%E7%9B%AE%EF%BC%9APorting%20KDE%20Games%20to%20Android%20platform.html</id>
