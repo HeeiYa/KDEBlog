@@ -3,7 +3,7 @@ date: 2024-07-23
 tag:
   - Android
   - QML
-excerpt: <p>有关如何在安卓上运行QML应用</p>
+excerpt: <p>About How to Build and Run QML Android Applications</p>
 ---
 
 # Building and Running QML Android Applications

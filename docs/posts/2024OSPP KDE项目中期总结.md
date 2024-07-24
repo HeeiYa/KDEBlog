@@ -39,7 +39,8 @@ The Tic-Tac-Toe game has been open-sourced on KDE Invent: [hanyang zhang / TicTa
 
 Supporting localization for QML applications requires the use of Qt's localization tools such as lupdate and lrelease. However, since the project is built with CMake, Qt also provides corresponding CMake methods: [qt_add_translations | Qt Linguist Manual](https://doc.qt.io/qt-6/qtlinguist-cmake-qt-add-translations.html)
 
-Additionally, I encountered some difficulties while building QML Android applications, as described here:
+Additionally, I encountered some difficulties while building QML Android applications, as described here: 
+[Building and Running QML Android Applications | Blog](https://heeiya.github.io/KDEBlog/posts/QML%20%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%BF%90%E8%A1%8C.html#building-qml-android-applications)
 
 
 

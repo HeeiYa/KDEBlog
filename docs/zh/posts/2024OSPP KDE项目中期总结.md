@@ -41,6 +41,7 @@ Tic-Tac-Toe游戏目前已经被我放到KDE invent上开源。[hanyang zhang / 
 但是因为项目使用Cmake构建，Qt也提供了相应的Cmake方法：[qt_add_translations | Qt Linguist Manual](https://doc.qt.io/qt-6/qtlinguist-cmake-qt-add-translations.html)
 
 另外，我在构建QML安卓应用时遇到了一些困难，见：
+[QML 安卓应用构建与运行 | Blog](https://heeiya.github.io/KDEBlog/zh/posts/QML%20%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%BF%90%E8%A1%8C.html)
 
 
 
