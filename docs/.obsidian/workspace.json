@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "zh/posts/QML 安卓应用构建与运行.md",
+                "file": "posts/2024OSPP KDE项目中期总结.md",
                 "mode": "source",
                 "source": true
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "zh/posts/2024OSPP KDE项目中期总结.md",
+                "file": "posts/2024OSPP KDE项目中期总结.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "zh/posts/2024OSPP KDE项目中期总结.md",
+                "file": "posts/2024OSPP KDE项目中期总结.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zh/posts/2024OSPP KDE项目中期总结.md"
+                "file": "posts/2024OSPP KDE项目中期总结.md"
               }
             }
           }
@@ -164,12 +164,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "1fc25818514d528f",
+  "active": "23de86c735262c44",
   "lastOpenFiles": [
-    "posts/2024OSPP KDE项目中期总结.md",
-    "posts/QML 安卓应用构建与运行.md",
-    "zh/posts/QML 安卓应用构建与运行.md",
     "zh/posts/2024OSPP KDE项目中期总结.md",
+    "posts/2024OSPP KDE项目中期总结.md",
+    "zh/posts/QML 安卓应用构建与运行.md",
+    "posts/QML 安卓应用构建与运行.md",
     "zh/posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
     "posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
     "posts/未命名",

@@ -35,7 +35,7 @@ The current features implemented in the game are:
 2. Unit testing capability
 3. Cross-platform compatibility
 
-The Tic-Tac-Toe game has been open-sourced on KDE Invent: [hanyang zhang / TicTacToe · GitLab](https://invent.kde.org/zhy/tictactoe)
+The Tic-Tac-Toe game is openly developed on KDE Invent: [hanyang zhang / TicTacToe · GitLab](https://invent.kde.org/zhy/tictactoe)
 
 Supporting localization for QML applications requires the use of Qt's localization tools such as lupdate and lrelease. However, since the project is built with CMake, Qt also provides corresponding CMake methods: [qt_add_translations | Qt Linguist Manual](https://doc.qt.io/qt-6/qtlinguist-cmake-qt-add-translations.html)
 
@@ -50,7 +50,7 @@ During this week, I officially began the migration work for Blinken.
 
 After studying Blinken's source code, I found that the interface of Blinken is drawn by a class named Blinken, which spans over 1000 lines. The drawing logic involves manipulating elements from Blinken.svg and using QPainter for direct drawing.
 
-Unfortunately, QML does not provide built-in support for manipulating SVG images like QtWidgets. Therefore, I split the SVG images into separate files and assembled these elements using QML.
+Unfortunately, QML does not provide built-in support for manipulating SVG images like QtWidgets. Therefore, I split the SVG images into separate files and assembled these elements using QML with Adobe Illustrator and Inkscape.
 
 ![Blinken Draft][BlinkenDraft]
 

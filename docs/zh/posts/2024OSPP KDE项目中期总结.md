@@ -34,7 +34,7 @@ OSPP项目开始已经过去三周了，三周过去，我的项目已经取得�
 2. 具备单元测试
 3. 可以跨平台运行
 
-Tic-Tac-Toe游戏目前已经被我放到KDE invent上开源。[hanyang zhang / TicTacToe · GitLab](https://invent.kde.org/zhy/tictactoe)
+Tic-Tac-Toe游戏目前已经被我放到KDE invent上。[hanyang zhang / TicTacToe · GitLab](https://invent.kde.org/zhy/tictactoe)
 
 
 对QML应用做本地化支持需要使用Qt提供的本地化工具lupdate、lrelease等。
@@ -45,13 +45,14 @@ Tic-Tac-Toe游戏目前已经被我放到KDE invent上开源。[hanyang zhang / 
 
 
 
+
 ## 第三周 7月15号——7月21号
 
 在这一周我正式开始迁移Blinken的工作。
 
 在研究了Blinken的源码之后，我发现Blinken的界面是由一个名为Blinken的类绘制的，这个类有1000多行，绘制逻辑一部分为操作Blinken.svg中元素，另外一部分为使用QPainter直接绘制。
 
-但是遗憾的是，QML中并没有提供如Qtwight那样操作SVG图片的功能，于是我对SVG图片进行了拆分，将所有元素分别单独拆为文件，并用QML将这些元素组装了起来。
+但是遗憾的是，QML中并没有提供如Qtwight那样操作SVG图片的功能，于是我用Adobe Illustrator和Inkscape对SVG图片进行了拆分和编辑，将所有元素分别单独拆为文件，并用QML将这些元素组装了起来。
 
 ![image][BlinkenDraft]
 

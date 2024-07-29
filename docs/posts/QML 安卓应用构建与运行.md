@@ -79,3 +79,5 @@ adb install android-build-debug.apk
 ```
 
 Make sure that your Android device has Developer Mode enabled. You can find specific instructions on how to enable Developer Mode based on your device model through an online search.
+
+If you want to share the screen on your phone on PC, you can use scrcpy:[Genymobile/scrcpy: Display and control your Android device](https://github.com/Genymobile/scrcpy) 

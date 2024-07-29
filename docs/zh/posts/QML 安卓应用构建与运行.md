@@ -86,3 +86,7 @@ adb install android-build-debug.apk
 ```
 确保你的安卓设备打开了开发者模式，具体打开方式请根据自己设备型号搜索。
 
+如果你想要在电脑上分享手机中apk的运行情况，可以使用scrcpy
+[Genymobile/scrcpy: Display and control your Android device](https://github.com/Genymobile/scrcpy)
+
+
