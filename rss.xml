@@ -6,8 +6,8 @@
     <link>https://heeiya.github.io/KDEBlog/</link>
     <description>A blog now mainly about my particpation in OSPP with KDE </description>
     <language>en-US</language>
-    <pubDate>Wed, 24 Jul 2024 14:26:45 GMT</pubDate>
-    <lastBuildDate>Wed, 24 Jul 2024 14:26:45 GMT</lastBuildDate>
+    <pubDate>Mon, 29 Jul 2024 13:21:59 GMT</pubDate>
+    <lastBuildDate>Mon, 29 Jul 2024 13:21:59 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -69,6 +69,7 @@ aapt2 E 07-23 15:59:44 51907 51907 ApkAssets.cpp:149] Failed to load resources t
 <p>After connecting your Android device via USB, use the adb command to install the APK:</p>
 <div class="language-bash" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre class="language-bash"><code><span class="line">adb <span class="token function">install</span> android-build-debug.apk</span>
 <span class="line"></span></code></pre></div><p>Make sure that your Android device has Developer Mode enabled. You can find specific instructions on how to enable Developer Mode based on your device model through an online search.</p>
+<p>If you want to share the screen on your phone on PC, you can use scrcpy:<a href="https://github.com/Genymobile/scrcpy" target="_blank" rel="noopener noreferrer">Genymobile/scrcpy: Display and control your Android device</a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -96,14 +97,14 @@ Week 1, July 1st to July 7...</description>
 <li>Unit testing capability</li>
 <li>Cross-platform compatibility</li>
 </ol>
-<p>The Tic-Tac-Toe game has been open-sourced on KDE Invent: <a href="https://invent.kde.org/zhy/tictactoe" target="_blank" rel="noopener noreferrer">hanyang zhang / TicTacToe · GitLab</a></p>
+<p>The Tic-Tac-Toe game is openly developed on KDE Invent: <a href="https://invent.kde.org/zhy/tictactoe" target="_blank" rel="noopener noreferrer">hanyang zhang / TicTacToe · GitLab</a></p>
 <p>Supporting localization for QML applications requires the use of Qt's localization tools such as lupdate and lrelease. However, since the project is built with CMake, Qt also provides corresponding CMake methods: <a href="https://doc.qt.io/qt-6/qtlinguist-cmake-qt-add-translations.html" target="_blank" rel="noopener noreferrer">qt_add_translations | Qt Linguist Manual</a></p>
 <p>Additionally, I encountered some difficulties while building QML Android applications, as described here:
 <a href="https://heeiya.github.io/KDEBlog/posts/QML%20%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%BF%90%E8%A1%8C.html#building-qml-android-applications" target="_blank" rel="noopener noreferrer">Building and Running QML Android Applications | Blog</a></p>
 <h2>Week 3, July 15th to July 21st</h2>
 <p>During this week, I officially began the migration work for Blinken.</p>
 <p>After studying Blinken's source code, I found that the interface of Blinken is drawn by a class named Blinken, which spans over 1000 lines. The drawing logic involves manipulating elements from Blinken.svg and using QPainter for direct drawing.</p>
-<p>Unfortunately, QML does not provide built-in support for manipulating SVG images like QtWidgets. Therefore, I split the SVG images into separate files and assembled these elements using QML.</p>
+<p>Unfortunately, QML does not provide built-in support for manipulating SVG images like QtWidgets. Therefore, I split the SVG images into separate files and assembled these elements using QML with Adobe Illustrator and Inkscape.</p>
 <p></p>
 <p>Modifying the UI took longer than I anticipated. However, after a week, I have nearly completed the interface drawing for Blinken. Next steps involve refining some page details and migrating Blinken's logic over.</p>
 <p>It's worth mentioning that QML does not provide a non-rectangular MouseArea for use, requiring the creation of a custom class to achieve this functionality. Fortunately, an example for this existed in earlier versions of the documentation: <a href="https://code.qt.io/cgit/qt/qtdeclarative.git/tree/examples/quick/customitems/maskedmousearea?h=6.2" target="_blank" rel="noopener noreferrer">maskedmousearea example</a>. Although this example seems to have been removed in the latest version, it should still be feasible to implement based on reference.</p>

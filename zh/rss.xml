@@ -6,8 +6,8 @@
     <link>https://heeiya.github.io/KDEBlog/zh/</link>
     <description>关于参与OSPP中KDE社区的开发</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 24 Jul 2024 14:26:45 GMT</pubDate>
-    <lastBuildDate>Wed, 24 Jul 2024 14:26:45 GMT</lastBuildDate>
+    <pubDate>Mon, 29 Jul 2024 13:21:59 GMT</pubDate>
+    <lastBuildDate>Mon, 29 Jul 2024 13:21:59 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -85,6 +85,8 @@ distributionUrl=https://services.gradle.org/distributions/gradle-8.6-bin.zip</p>
 <p>在使用USB连接你的安卓设备后使用adb命令安装</p>
 <div class="language-bash" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre class="language-bash"><code><span class="line">adb <span class="token function">install</span> android-build-debug.apk</span>
 <span class="line"></span></code></pre></div><p>确保你的安卓设备打开了开发者模式，具体打开方式请根据自己设备型号搜索。</p>
+<p>如果你想要在电脑上分享手机中apk的运行情况，可以使用scrcpy
+<a href="https://github.com/Genymobile/scrcpy" target="_blank" rel="noopener noreferrer">Genymobile/scrcpy: Display and control your Android device</a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -116,7 +118,7 @@ OSPP项目开始已经过去三周了，三周过去，我的项目已经取得�
 <li>具备单元测试</li>
 <li>可以跨平台运行</li>
 </ol>
-<p>Tic-Tac-Toe游戏目前已经被我放到KDE invent上开源。<a href="https://invent.kde.org/zhy/tictactoe" target="_blank" rel="noopener noreferrer">hanyang zhang / TicTacToe · GitLab</a></p>
+<p>Tic-Tac-Toe游戏目前已经被我放到KDE invent上。<a href="https://invent.kde.org/zhy/tictactoe" target="_blank" rel="noopener noreferrer">hanyang zhang / TicTacToe · GitLab</a></p>
 <p>对QML应用做本地化支持需要使用Qt提供的本地化工具lupdate、lrelease等。
 但是因为项目使用Cmake构建，Qt也提供了相应的Cmake方法：<a href="https://doc.qt.io/qt-6/qtlinguist-cmake-qt-add-translations.html" target="_blank" rel="noopener noreferrer">qt_add_translations | Qt Linguist Manual</a></p>
 <p>另外，我在构建QML安卓应用时遇到了一些困难，见：
@@ -124,7 +126,7 @@ OSPP项目开始已经过去三周了，三周过去，我的项目已经取得�
 <h2>第三周 7月15号——7月21号</h2>
 <p>在这一周我正式开始迁移Blinken的工作。</p>
 <p>在研究了Blinken的源码之后，我发现Blinken的界面是由一个名为Blinken的类绘制的，这个类有1000多行，绘制逻辑一部分为操作Blinken.svg中元素，另外一部分为使用QPainter直接绘制。</p>
-<p>但是遗憾的是，QML中并没有提供如Qtwight那样操作SVG图片的功能，于是我对SVG图片进行了拆分，将所有元素分别单独拆为文件，并用QML将这些元素组装了起来。</p>
+<p>但是遗憾的是，QML中并没有提供如Qtwight那样操作SVG图片的功能，于是我用Adobe Illustrator和Inkscape对SVG图片进行了拆分和编辑，将所有元素分别单独拆为文件，并用QML将这些元素组装了起来。</p>
 <p></p>
 <p>对UI的修改花费的时间比我想象中的长，不过一周过去，我基本完成了对Blinken界面的绘制，接下来主要是修改一些页面细节，以及将Blinken的逻辑转移过来。</p>
 <p>值得一提的是，QML并未提供非矩形的MouseArea供使用，需要自己写一个类来实现这个功能。不过好在早期版本的文档里提供了一个这样的example<a href="https://code.qt.io/cgit/qt/qtdeclarative.git/tree/examples/quick/customitems/maskedmousearea?h=6.2" target="_blank" rel="noopener noreferrer">maskedmousearea « customitems « quick « examples - qt/qtdeclarative.git - Qt Declarative (Quick 2)</a>
