@@ -6,8 +6,8 @@
     <link>https://heeiya.github.io/KDEBlog/</link>
     <description>A blog now mainly about my particpation in OSPP with KDE </description>
     <language>en-US</language>
-    <pubDate>Mon, 29 Jul 2024 13:21:59 GMT</pubDate>
-    <lastBuildDate>Mon, 29 Jul 2024 13:21:59 GMT</lastBuildDate>
+    <pubDate>Mon, 19 Aug 2024 15:15:37 GMT</pubDate>
+    <lastBuildDate>Mon, 19 Aug 2024 15:15:37 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <image>
@@ -17,6 +17,52 @@
     </image>
     <category>OSPP</category>
     <category>introduction</category>
+    <item>
+      <title>2024 OSPP KDE Project Late-Stage Summary</title>
+      <link>https://heeiya.github.io/KDEBlog/posts/2024OSPP%20KDE%E9%A1%B9%E7%9B%AE%E6%9C%AB%E6%9C%9F%E6%80%BB%E7%BB%93.html</link>
+      <guid>https://heeiya.github.io/KDEBlog/posts/2024OSPP%20KDE%E9%A1%B9%E7%9B%AE%E6%9C%AB%E6%9C%9F%E6%80%BB%E7%BB%93.html</guid>
+      <source url="https://heeiya.github.io/KDEBlog/rss.xml">2024 OSPP KDE Project Late-Stage Summary</source>
+      <description>2024 OSPP KDE Project Late-Stage Summary
+It&amp;apos;s been more than three weeks since the midterm summary, and the project is now nearing completion.
+Currently, all the original featur...</description>
+      <category>OSPP</category>
+      <pubDate>Sat, 17 Aug 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[
+<p>It's been more than three weeks since the midterm summary, and the project is now nearing completion.</p>
+<p>Currently, all the original features of Blinken have been fully implemented in the QML version. The remaining tasks involve UI adjustments, testing, and fixing potential bugs.</p>
+<p>Over the past few weeks, I’ve been working on the following:</p>
+<h2>Integrating Blinken's Logic</h2>
+<p>The game logic of Blinken is handled by the <code>BlinkenGame</code> class from the original Blinken. The original code design is quite good, with most of the game logic encapsulated in this one class. The separation between the logic and the UI rendering is well done, so all I needed to do was connect the signals from this class in QML.</p>
+<p>As for the audio playback in Blinken, the original code used the Phonon library, which is also open-source but does not support Android. Therefore, I replaced it with the <code>QtMultimedia</code> library, which provides cross-platform audio playback functionality.</p>
+<h2>Android Build for KF6 Applications</h2>
+<p>Some features of Blinken rely on libraries provided by the KF6 framework, such as <code>KF6I18n</code> and <code>KF6Config</code>. When cross-compiling to the Android platform, it's necessary to use the aarch64-linux versions of these libraries. If these libraries are not available on your system, you will encounter the following errors during compilation:</p>
+<div class="language-bash" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre class="language-bash"><code><span class="line">ld.lld: error: /usr/lib64/libKF6XmlGui.so.6.4.0 is incompatible with aarch64linux ld.lld: error: /usr/lib64/libKF6ConfigWidgets.so.6.4.0 is incompatible with aarch64linux </span>
+<span class="line">……</span>
+<span class="line"></span></code></pre></div><p>However, the package manager on my Fedora distribution does not provide these versions. Compiling and installing them one by one from source is too cumbersome. On the advice of the community, I used <strong>Craft</strong> to handle cross-compilation.</p>
+<p>For reference, here is the Craft tutorial: <a href="https://community.kde.org/Craft" target="_blank" rel="noopener noreferrer">Craft - KDE Community Wiki</a></p>
+<p>Important note: If you encounter installation failures, make sure to clear all contents under <code>craft-kde-android</code> before trying again, as leftover files may cause the installation to fail.</p>
+<p>When installing, choose the <code>Arm64</code> target architecture. If there are remnants from a previous failed installation, it may prevent the option to select the <code>ARM64</code> architecture.</p>
+<p>If you encounter issues like "Permission denied," you’ll need to disable SELinux:</p>
+<div class="language-bash" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre class="language-bash"><code><span class="line"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> selinux-utils </span>
+<span class="line"><span class="token function">sudo</span> setenforce <span class="token number">0</span></span>
+<span class="line"></span></code></pre></div><p>Additionally, note that in the virtual machine <code>invent-registry.kde.org/sysadmin/ci-images/android-qt67</code> provided by the community, the Java version is outdated, preventing the use of Gradle 8.6. You can either manually update the Java version in the docker or use an older version of Gradle.</p>
+<p>To use Craft for building applications, you need to write a script called a <strong>Blueprint</strong>, which describes the libraries your application depends on. These scripts are relatively easy to write, and you can quickly get started by following the community documentation: <a href="https://community.kde.org/Craft/Blueprints" target="_blank" rel="noopener noreferrer">Craft/Blueprints - KDE Community Wiki</a>.</p>
+<h2>Using KF6 Framework Libraries</h2>
+<p>Some of the libraries originally used by Blinken are compatible with the Android platform, while others are not. By referring to the <a href="https://api.kde.org/frameworks/index.html" target="_blank" rel="noopener noreferrer">API Documentation</a>,  you can check which libraries are supported on Android. In Blinken, the following libraries are Android-compatible:</p>
+<ul>
+<li>CoreAddons</li>
+<li>GuiAddons</li>
+<li>I18n</li>
+<li>XmlGui</li>
+</ul>
+<p>I needed to use these libraries in the QML version of Blinken.</p>
+<p>The KF6 framework provides a convenient internationalization API, and the usage in QML is almost the same as in QWidget, which allowed me to directly reuse Blinken’s original multi-language support, saving a lot of time.</p>
+<p>KConfig is used in Blinken to store high score information and settings. For the high scores, I needed to extract the <code>HighScoreManager</code> class from the original <code>HighScoreDialog</code> file, make some modifications, and then create a new high score interface in QML that connects the signals and slots of <code>HighScoreManager</code>. For the settings functionality, it’s as simple as registering a KConfig singleton in QML :</p>
+<div class="language-C++" data-highlighter="prismjs" data-ext="C++" data-title="C++"><pre class="language-C++"><code><span class="line">`qmlRegisterSingletonInstance&lt;blinkenSettings&gt;("org.kde.blinken", 1, 0, "BlinkenSettings", blinkenSettings::self());</span>
+<span class="line"></span></code></pre></div><p>KF6XmlGui was used in the original Blinken to create the About Blinken Page, About KDE Page, and Handbook Page. Although this library is Android-compatible, it is based on QWidget, while the main interface of Blinken is built with QML. Bringing in QWidget just for these pages didn't seem like a good idea. Luckily, for the Android platform, <code>kirigami-addons</code> provides this functionality. By incorporating it, I also brought in <code>Kirigami</code>, which helps optimize the UI.</p>
+<p>After adding new dependencies, it’s important to modify the <code>.kde-ci.yml</code> file to support CI/CD. For more information: <a href="https://community.kde.org/Infrastructure/Continuous_Integration_System" target="_blank" rel="noopener noreferrer">Infrastructure/Continuous Integration System - KDE Community Wiki</a>.</p>
+]]></content:encoded>
+    </item>
     <item>
       <title>Building and Running QML Android Applications</title>
       <link>https://heeiya.github.io/KDEBlog/posts/QML%20%E5%AE%89%E5%8D%93%E5%BA%94%E7%94%A8%E6%9E%84%E5%BB%BA%E4%B8%8E%E8%BF%90%E8%A1%8C.html</link>
@@ -36,7 +82,7 @@ Android resource linking failed
 aapt2 E 07-23 15:59:44 51907 51907 LoadedArsc.cpp:94] RES_TABLE_TYPE_TYPE entry offsets overlap actual entry data.
 aapt2 E 07-23 15:59:44 51907 51907 ApkAssets.cpp:149] Failed to load resources table in APK '/home/zhy/Android/Sdk/platforms/android-35/android.jar'.</p>
 </blockquote>
-<p>This is because the current Gradle plugin version does not support android-35. See<a href="https://stackoverflow.com/questions/54152209/how-to-fix-execution-failed-for-task-appprocessdebugresources-android-re" target="_blank" rel="noopener noreferrer">How to fix "Execution failed for task ':app:processDebugResources'. &gt; Android resource linking failed"[Android/Flutter] - Stack Overflow</a></p>
+<p>This is because the current Gradle plugin version does not support android-35. See <a href="https://stackoverflow.com/questions/54152209/how-to-fix-execution-failed-for-task-appprocessdebugresources-android-re" target="_blank" rel="noopener noreferrer">How to fix "Execution failed for task ':app:processDebugResources'. &gt; Android resource linking failed"[Android/Flutter] - Stack Overflow</a></p>
 <p>To resolve this issue, you need to modify the Gradle configuration.</p>
 <p>Navigate to the <code>/build/Qt_6_7_2_Clang_arm64_v8a-Debug/android-build</code> folder in your project.</p>
 <p>Open the <code>build.gradle</code> file and locate the <code>dependencies</code> block:</p>
@@ -69,7 +115,7 @@ aapt2 E 07-23 15:59:44 51907 51907 ApkAssets.cpp:149] Failed to load resources t
 <p>After connecting your Android device via USB, use the adb command to install the APK:</p>
 <div class="language-bash" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre class="language-bash"><code><span class="line">adb <span class="token function">install</span> android-build-debug.apk</span>
 <span class="line"></span></code></pre></div><p>Make sure that your Android device has Developer Mode enabled. You can find specific instructions on how to enable Developer Mode based on your device model through an online search.</p>
-<p>If you want to share the screen on your phone on PC, you can use scrcpy:<a href="https://github.com/Genymobile/scrcpy" target="_blank" rel="noopener noreferrer">Genymobile/scrcpy: Display and control your Android device</a></p>
+<p>If you want to share the screen on your phone on PC, you can use scrcpy: <a href="https://github.com/Genymobile/scrcpy" target="_blank" rel="noopener noreferrer">Genymobile/scrcpy: Display and control your Android device</a></p>
 ]]></content:encoded>
     </item>
     <item>
@@ -87,8 +133,8 @@ Week 1, July 1st to July 7...</description>
 <h2>Week 1, July 1st to July 7th</h2>
 <p>In the first week of the project, with the help of my mentor, I first set up a suitable development environment and identified Blinken as the first application to be migrated for the project. In addition to this, I also set up this project's blog, which has now been included in KDE Planet.</p>
 <p>Currently, I am using a development environment on a VirtualBox virtual machine running Fedora Workstation 40. With this setup, I can compile and build KDE applications and perform Qt development.</p>
-<p>For building the KDE development environment, it is recommended to use<a href="https://develop.kde.org/docs/getting-started/building/kdesrc-build-setup/" target="_blank" rel="noopener noreferrer">kdesrc-build</a> provided by KDE official, and it is also recommended to develop under KDE Neon system, which can be done using <a href="https://community.kde.org/Get_Involved/development/More#Develop_in_a_Linux_container" target="_blank" rel="noopener noreferrer">docker</a> or <a href="https://community.kde.org/Get_Involved/development/Developing_in_a_virtual_machine" target="_blank" rel="noopener noreferrer">virtual machines</a></p>
-<p>A straightforward method for setting up Qt Android development environment is to use[Qt Online Installer](<a href="https://doc.qt.io/qt-6/get-and-install-qt.html#using-qt-maintenance-tool" target="_blank" rel="noopener noreferrer">Get and Install Qt | Qt 6.7</a>) and Qt Creator. After installing Qt Creator, navigate to Editing -&gt; Preferences -&gt; Devices -&gt; Android to select the necessary development kit. Qt Creator will automatically download the required SDK and NDK.</p>
+<p>For building the KDE development environment, it is recommended to use <a href="https://develop.kde.org/docs/getting-started/building/kdesrc-build-setup/" target="_blank" rel="noopener noreferrer">kdesrc-build</a> provided by KDE official, and it is also recommended to develop under KDE Neon system, which can be done using <a href="https://community.kde.org/Get_Involved/development/More#Develop_in_a_Linux_container" target="_blank" rel="noopener noreferrer">docker</a> or <a href="https://community.kde.org/Get_Involved/development/Developing_in_a_virtual_machine" target="_blank" rel="noopener noreferrer">virtual machines</a></p>
+<p>A straightforward method for setting up Qt Android development environment is to use [Qt Online Installer]((https://doc.qt.io/qt-6/get-and-install-qt.html#using-qt-maintenance-tool) and Qt Creator. After installing Qt Creator, navigate to Editing -&gt; Preferences -&gt; Devices -&gt; Android to select the necessary development kit. Qt Creator will automatically download the required SDK and NDK.</p>
 <h2>Week 2, July 8th to July 14th</h2>
 <p>Upon my mentor's suggestion, I developed a simple Tic-Tac-Toe QML game as a practice exercise. This game uses QML to create a simple interface and employs a C++ class to handle game logic, which will also be the architecture for the upcoming game migration.</p>
 <p>The current features implemented in the game are:</p>
