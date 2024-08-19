@@ -4,40 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "072d834843e6b682",
+        "id": "3e780c701907e1cd",
         "type": "tabs",
         "children": [
           {
-            "id": "1fc25818514d528f",
+            "id": "6ed10504fb616c12",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "zh/posts/2024OSPP KDE项目中期总结.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
-          }
-        ]
-      },
-      {
-        "id": "468ba3e13c2fb0a4",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "23de86c735262c44",
+            "id": "a34ea0fb730f4981",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/2024OSPP KDE项目中期总结.md",
+                "file": "posts/2024OSPP KDE项目末期总结.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -103,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "posts/2024OSPP KDE项目中期总结.md",
+                "file": "posts/2024OSPP KDE项目末期总结.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "posts/2024OSPP KDE项目中期总结.md",
+                "file": "posts/2024OSPP KDE项目末期总结.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/2024OSPP KDE项目中期总结.md"
+                "file": "posts/2024OSPP KDE项目末期总结.md"
               }
             }
           }
@@ -164,20 +159,22 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "23de86c735262c44",
+  "active": "a34ea0fb730f4981",
   "lastOpenFiles": [
+    "zh/posts/2024OSPP KDE项目末期总结.md",
+    "posts/2024OSPP KDE项目末期总结.md",
+    "posts/关于我.md",
     "zh/posts/2024OSPP KDE项目中期总结.md",
     "posts/2024OSPP KDE项目中期总结.md",
-    "zh/posts/QML 安卓应用构建与运行.md",
     "posts/QML 安卓应用构建与运行.md",
-    "zh/posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
     "posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
+    "zh/README.md",
+    "README.md",
+    "zh/posts/QML 安卓应用构建与运行.md",
+    "zh/posts/2024OSPP KDE社区项目：Porting KDE Games to Android platform.md",
     "posts/未命名",
     "images/Pasted image 20240711103028.png",
-    "README.md",
-    "zh/README.md",
     "zh/posts/关于我.md",
-    "posts/关于我.md",
     "zh/posts/archive2.md",
     "posts",
     "images",
@@ -198,8 +195,6 @@
     "posts/article5.md",
     "posts/article8.md",
     "posts/article10.md",
-    "posts/article12.md",
-    "posts/article6.md",
     "posts/images"
   ]
 }

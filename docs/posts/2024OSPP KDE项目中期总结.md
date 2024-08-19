@@ -19,9 +19,9 @@ In the first week of the project, with the help of my mentor, I first set up a s
 
 Currently, I am using a development environment on a VirtualBox virtual machine running Fedora Workstation 40. With this setup, I can compile and build KDE applications and perform Qt development.
 
-For building the KDE development environment, it is recommended to use[kdesrc-build](https://develop.kde.org/docs/getting-started/building/kdesrc-build-setup/) provided by KDE official, and it is also recommended to develop under KDE Neon system, which can be done using [docker](https://community.kde.org/Get_Involved/development/More#Develop_in_a_Linux_container) or [virtual machines](https://community.kde.org/Get_Involved/development/Developing_in_a_virtual_machine)
+For building the KDE development environment, it is recommended to use [kdesrc-build](https://develop.kde.org/docs/getting-started/building/kdesrc-build-setup/) provided by KDE official, and it is also recommended to develop under KDE Neon system, which can be done using [docker](https://community.kde.org/Get_Involved/development/More#Develop_in_a_Linux_container) or [virtual machines](https://community.kde.org/Get_Involved/development/Developing_in_a_virtual_machine)
 
-A straightforward method for setting up Qt Android development environment is to use[Qt Online Installer]([Get and Install Qt | Qt 6.7](https://doc.qt.io/qt-6/get-and-install-qt.html#using-qt-maintenance-tool)) and Qt Creator. After installing Qt Creator, navigate to Editing -> Preferences -> Devices -> Android to select the necessary development kit. Qt Creator will automatically download the required SDK and NDK.
+A straightforward method for setting up Qt Android development environment is to use [Qt Online Installer]((https://doc.qt.io/qt-6/get-and-install-qt.html#using-qt-maintenance-tool) and Qt Creator. After installing Qt Creator, navigate to Editing -> Preferences -> Devices -> Android to select the necessary development kit. Qt Creator will automatically download the required SDK and NDK.
 
 
 

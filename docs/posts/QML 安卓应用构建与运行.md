@@ -18,7 +18,7 @@ Qt Creator uses Gradle for project building. Once your project code is ready, se
      aapt2 E 07-23 15:59:44 51907 51907 LoadedArsc.cpp:94] RES_TABLE_TYPE_TYPE entry offsets overlap actual entry data.
      aapt2 E 07-23 15:59:44 51907 51907 ApkAssets.cpp:149] Failed to load resources table in APK '/home/zhy/Android/Sdk/platforms/android-35/android.jar'.
 
-This is because the current Gradle plugin version does not support android-35. See[How to fix "Execution failed for task ':app:processDebugResources'. > Android resource linking failed"[Android/Flutter] - Stack Overflow](https://stackoverflow.com/questions/54152209/how-to-fix-execution-failed-for-task-appprocessdebugresources-android-re)
+This is because the current Gradle plugin version does not support android-35. See [How to fix "Execution failed for task ':app:processDebugResources'. > Android resource linking failed"[Android/Flutter] - Stack Overflow](https://stackoverflow.com/questions/54152209/how-to-fix-execution-failed-for-task-appprocessdebugresources-android-re)
 
 To resolve this issue, you need to modify the Gradle configuration.
 
@@ -80,4 +80,4 @@ adb install android-build-debug.apk
 
 Make sure that your Android device has Developer Mode enabled. You can find specific instructions on how to enable Developer Mode based on your device model through an online search.
 
-If you want to share the screen on your phone on PC, you can use scrcpy:[Genymobile/scrcpy: Display and control your Android device](https://github.com/Genymobile/scrcpy) 
+If you want to share the screen on your phone on PC, you can use scrcpy: [Genymobile/scrcpy: Display and control your Android device](https://github.com/Genymobile/scrcpy) 
